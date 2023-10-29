@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* header hover */
+.menu-item {
+  position: relative;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1F2937; /* Change to your desired hover color */
+  transition: width 0.3s ease-in-out; /* Adjust the duration as needed */
+}
+
+.menu-item:hover::before {
+  width: 100%;
+}
+
+
+
