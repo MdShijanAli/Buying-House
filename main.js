@@ -4,6 +4,7 @@ const currentYear = currentDate.getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,4 +31,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].classList.add("bg-gray-700");
 }
+
+
+
+
 

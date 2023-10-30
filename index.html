@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Buying House</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   </head>
   <body>
    
 
 
 <!-- Header -->
- <nav class="bg-white shadow-md z-50 sticky top-0">
+ <nav class="bg-[#ffffff99] backdrop-blur-md shadow-md z-50 sticky top-0">
   <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
     <div class="lg:flex items-center justify-between w-full">
           <div class="w-[200px] p-3">
@@ -22,13 +25,37 @@
           </div>
   
           <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
-            <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 p-4 md:p-0 mt-4 font-semibold text-primary border border-gray-100 rounded-lg bg-gray-50 md:border-0 md:bg-white">
-                <a href="/"><li class="my-3 pb-1 menu-item lg:my-0">Home </li></a>
-                <a href="./pages/about.html"> <li class="my-3 pb-1 menu-item lg:my-0">About Us</li></a>
-                <a href="./pages/products.html"><li class="my-3 pb-1 menu-item lg:my-0">Products</li></a>
-                <a href="./pages/gallery.html"> <li class="my-3 pb-1 menu-item lg:my-0">Gallery</li></a>
-                <a href="./pages/career.html"><li class="my-3 pb-1 menu-item lg:my-0">Career</li></a>
-                <a href="./pages/contact.html"><li class="my-3 pb-1 menu-item lg:my-0">Contact Us</li></a>
+            <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 p-4 md:p-0 mt-4 font-semibold text-primary ">
+              <li>
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="/">
+                    Home 
+                  </a>
+                </li>
+                <li>
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/about.html"> 
+                    About Us
+                  </a>
+                  </li>
+                  <li>
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/products.html">
+                    Products
+                  </a>
+                  </li>
+                  <li>
+                     <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/gallery.html">
+                    Gallery
+                  </a>
+                  </li>
+                  <li>
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/career.html">
+                    Career
+                  </a>
+                  </li>
+                  <li >
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/contact.html">
+                    Contact Us
+                  </a>
+                  </li>
             </ul>
           </div>
     </div>
@@ -67,66 +94,72 @@
 
 <!-- slider -->
 
-<div id="home" class=" mx-auto relative">
 
-  <div class="mySlides fade relative">
-    <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide fade relative">
+      <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
         <img src="https://img1.wsimg.com/isteam/stock/4282/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m" class="w-full h-full brightness-50" alt="Nature">
         <div class="absolute inset-0 bg-black opacity-30"></div>
-    </div>
-    <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase">apparel Horizon</h1>
-        <p class="text-md md:text-xl w-1/2 py-5">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white ">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
+        <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
         <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      </div>
+      
     </div>
-</div>
-  <div class="mySlides fade relative">
-    <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
+    <div class="swiper-slide fade relative">
+      <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
         <img src="./images/Bitmaddp-scaled-copy-2.webp" class="w-full h-full brightness-50" alt="Nature">
         <div class="absolute inset-0 bg-black opacity-30"></div>
     </div>
     <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase">apparel Horizon</h1>
-        <p class="text-md md:text-xl w-1/2 py-5">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-        <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
+      <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
     </div>
-</div>
-  <div class="mySlides fade relative">
-    <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
+    </div>
+    <div class="swiper-slide fade relative">
+      <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
         <img src="https://ananta-bd.com/wp-content/uploads/2021/06/anastase-maragos-ZUBNPRZsQvk-unsplash.jpg" class="w-full h-full brightness-50" alt="Nature">
         <div class="absolute inset-0 bg-black opacity-30"></div>
     </div>
     <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase">apparel Horizon</h1>
-        <p class="text-md md:text-xl w-1/2 py-5">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-        <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
+      <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
     </div>
+    </div>
+  
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
 </div>
 
 
-
-  <a class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white font-bold text-xl p-4 cursor-pointer bg-black bg-opacity-80 rounded-l-md" onclick="plusSlides(-1)">❮</a>
-  <a class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white font-bold text-xl p-4 cursor-pointer bg-black bg-opacity-80 rounded-r-md" onclick="plusSlides(1)">❯</a>
-
-</div>
 
 
 <!-- about us section -->
 
-<div>
+<div class="">
   <div class="max-w-7xl mx-auto px-6 sm:py-20 py-10">
-    <div class="md:w-1/2 mx-auto text-center mb-10">
-    <h1 class="text-h1 font-semibold">About Us</h1>
-    <p class="my-3 text-paragraph font-semibold font-base leading-8 tracking-wider">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
-  </div>
+    <div class="md:w-1/2 mx-auto text-center mb-10 transform -translate-x-full transition-transform duration-500 ease-in-out slide-in">
+      <h1 class="text-h1 font-semibold">About Us</h1>
+      <p class="my-3 text-paragraph font-medium font-base leading-8 tracking-wider">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
+    </div>
+       
+    
   
   <div class=" grid md:grid-cols-2 gap-10 items-center">
-        <div>
+        <div class="">
           <img class="w-full" src="https://img1.wsimg.com/isteam/stock/3458/:/cr=t:10.71%25,l:0%25,w:79.17%25,h:89.29%25/rs=w:600,h:451,cg:true,m" alt="">
         </div>
         <div class="sm:p-10 text-center sm:text-left">
-          <h1 class="text-h2 font-semibold break-all">One of the biggest conglomerates in Bangladesh.</h1>
-          <p class="py-4 text-paragraph font-semibold font-base leading-8 tracking-wider text-justify">The legacy of AKIJ GROUP is over half a century old and over the years Akij has established itself as the full of confidence and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities & different products. <br class="hidden sm:block">
+          <h1 class="text-h2 font-semibold ">One of the biggest conglomerates in Bangladesh.</h1>
+          <p class="py-4 text-paragraph font-medium font-base leading-8 tracking-wider text-justify">The legacy of AKIJ GROUP is over half a century old and over the years Akij has established itself as the full of confidence and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities & different products. <br class="hidden sm:block">
             Akij Group launched its venture as a small jute trader more than 50 years ago.</p>
           <a href="">
             <button class="bg-primary hover:bg-secondary text-white px-6 py-2 mt-4 transition duration-700 ease-in-out">Learn More</button>
@@ -145,7 +178,7 @@
   <div class="max-w-7xl mx-auto px-6 md:py-20">
   <div class="md:w-1/2 mx-auto text-center mb-10">
     <h1 class="text-h1 font-semibold">Why Choose Us</h1>
-    <p class="my-3 text-paragraph font-semibold font-base leading-8 tracking-wider">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
+    <p class="my-3 text-paragraph font-medium font-base leading-8 tracking-wider">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
   </div>
   
   <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 items-center pt-10">
@@ -158,7 +191,7 @@
            </div>
            <div class="text-center">
             <h2 class="text-h2 font-semibold my-5">Cost Advantage</h2>
-            <p class="text-paragraph font-semibold font-base leading-8 tracking-wider px-5">We focus exceedingly on the the cost advantage of our production.</p>
+            <p class="text-paragraph font-medium font-base leading-8 tracking-wider px-5">We focus exceedingly on the the cost advantage of our production.</p>
            </div>
        </div>
        <div class="group">
@@ -170,7 +203,7 @@
            </div>
            <div class="text-center">
             <h2 class="text-h2 font-semibold my-5">Technological Advantage</h2>
-            <p class="text-paragraph font-semibold font-base leading-8 tracking-wider px-5">We put great effort to ensure the efficiency on the technological aspects.</p>
+            <p class="text-paragraph font-medium font-base leading-8 tracking-wider px-5">We put great effort to ensure the efficiency on the technological aspects.</p>
            </div>
        </div>
        <div class="group">
@@ -208,7 +241,7 @@
     </div>
     <div class="lg:p-20 p-5 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1">
       <h1 class="lg:text-h1 text-3xl font-semibold leading-tight ">International standards and compliances measures</h1>
-      <p class="mt-10 text-paragraph font-semibold font-base leading-8 tracking-wider">New international standards and compliances measures set by International Agencies and the valued customers are something that Standard Group always looks forward to. We maintain a professional culture that abides by ethics, employee standards, industry standards, and legal compliances. Our business growth is directly transformed into reality within these compliances.</p>
+      <p class="mt-10 text-paragraph font-medium font-base leading-8 tracking-wider">New international standards and compliances measures set by International Agencies and the valued customers are something that Standard Group always looks forward to. We maintain a professional culture that abides by ethics, employee standards, industry standards, and legal compliances. Our business growth is directly transformed into reality within these compliances.</p>
     </div>
   </div>
 </div>
@@ -339,7 +372,7 @@
 
 
  <!-- Footer -->
- <div class="bg-primary text-white py-16">
+ <div class="bg-primary text-white pt-16 pb-10">
   <div class="mx-auto max-w-7xl px-6">
      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
          <div class="grid grid-cols-2 gap-8 xl:col-span-2">
@@ -348,6 +381,31 @@
             <h1 class="text-h2 my-3 font-semibold">Apparel Horizon</h1>
             <p>House # 29 Rd No 17, Dhaka 1213</p>
             <p class="my-3">01714-171792</p>
+            <div class="">
+              <ul class="flex gap-3 justify-center">
+                <li>
+                  <a href="https://www.facebook.com/tihanonline/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
+                      <path class="fill-white  hover:fill-primary" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
+                      <path class="fill-white  hover:fill-primary" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 448 512">
+                      <path class="fill-white  hover:fill-primary" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
            </div>
 
            <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -384,7 +442,7 @@
                 <label for="email-address" class="sr-only">Email address</label>
                 <input type="email" name="email-address" id="email-address"  required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-sm text-gray-900 placeholder-gray-500 focus:border-0 focus:ring-2 focus:ring-primary focus:placeholder-white" placeholder="Enter your email">
                 <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <button type="submit" class="lg:w-28 h-10 w-full rounded-md bg-primary hover:bg-third transition duration-700 ease-in-out text-white">Subscribe</button>
+                  <button type="submit" class="lg:w-28 h-10 w-full rounded-md bg-secondary hover:bg-third transition duration-700 ease-in-out text-white">Subscribe</button>
               </div>
             </form>
 
@@ -393,47 +451,103 @@
   </div>
 
 
-  <div class="mt-14">
+  <div class="mt-10">
     <img src="../images/sslcommerz-foo.webp" alt="">
   </div>
 
-  <div class="flex md:flex-row gap-5 flex-col-reverse mt-12 items-center justify-between bg-third p-6 rounded-xl">
-    <div>
+ 
+    <div class="mt-6">
       <a href="https://www.zealtechbd.com/" target="_blank">
       <p class="text-sm text-gray-200 hover:text-white text-center">© Copyright <span id="currentYear"></span> Apparel Horizon. | All Rights Reserved | Powered by ZealtechBD.</p>
     </a>
     </div>
-    <div>
-      <ul class="flex gap-1">
-        <li>
-          <a href="https://www.facebook.com/tihanonline/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
-              <path class="fill-white  hover:fill-primary" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
-              <path class="fill-white  hover:fill-primary" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 448 512">
-              <path class="fill-white  hover:fill-primary" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+
 </div>
 
 
     </div>
 
+
+
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      on: {
+      slideChangeTransitionStart: function () {
+        // Remove the animation class from all text and button elements
+        document.querySelectorAll('.animate-slide-in-left').forEach(function (element) {
+          element.classList.remove('slide-in');
+        });
+
+        // Get the active slide and its text and button elements
+        var activeSlide = this.slides[this.activeIndex];
+        var textElement = activeSlide.querySelector('.animate-slide-in-left');
+        
+        // Add a class to trigger the animation
+        textElement.classList.add('slide-in');
+      }
+    },
+      /* on: {
+      slideChangeTransitionStart: function () {
+        // Remove the animation class from all text and button elements
+        document.querySelectorAll('. animate-slide-in-right').forEach(function (element) {
+          element.classList.remove('slide-in');
+        });
+
+        // Get the active slide and its text and button elements
+        var activeSlide = this.slides[this.activeIndex];
+        var textElement = activeSlide.querySelector('. animate-slide-in-right');
+        
+        // Add a class to trigger the animation
+        textElement.classList.add('slide-in-right');
+      }
+    } */
+  });
+
+  </script>
+  
+
+
+<script>
+  const element = document.querySelector(".slide-in");
+
+  window.addEventListener("scroll", function() {
+    const elementOffset = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementOffset < windowHeight) {
+      element.classList.remove("-translate-x-full");
+    } else {
+      element.classList.add("-translate-x-full");
+    }
+  });
+</script>
+
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+ -->
 
     <!-- Javascript code stat -->
     <!-- Add this to your HTML file to include Axios -->

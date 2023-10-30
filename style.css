@@ -42,4 +42,84 @@ body{
 }
 
 
+/* 
+/* slider css code */
 
+.swiper {
+  width: 100%;
+  height: 70%%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* 
+.animate-left {
+  animation: slideFromLeft 1s ease-in-out forwards;
+}
+
+
+.animate-right {
+  animation: slideFromRight 1s ease-in-out forwards;
+}
+
+
+.animate-top {
+  animation: slideFromTop 1s ease-in-out forwards;
+}
+
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ */
+
+ .animate-slide-in-left {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+/*  .animate-slide-in-right {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+} */
+
+.slide-in {
+  transform: translateX(0);
+}
+/* .slide-in-right {
+  transform: translateX(0);
+}
+ */
