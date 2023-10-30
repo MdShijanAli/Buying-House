@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-  
-  font-family: 'Fira Sans', sans-serif;
+
+
+h1,h2,h3,h4,h5,h6,p,span{
+  font-family: 'Lato', sans-serif;
 }
+
+/*
+ @font-face {
+  font-family: 'Atiba';
+  src: url('./public/font/Atiba.ttf');
+}
+body{
+  font-family: 'Atiba';
+} */
+
+
 
 /* header hover */
 .menu-item {
@@ -20,7 +33,7 @@ body {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #1F2937; /* Change to your desired hover color */
+  background-color: #1E2453; /* Change to your desired hover color */
   transition: width 0.3s ease-in-out; /* Adjust the duration as needed */
 }
 

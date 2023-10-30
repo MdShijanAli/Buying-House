@@ -12,9 +12,10 @@ export default {
       colors: {
         // my custom colors 
         'primary': '#1E2453', 
-        'secondary': '#1F2937', 
+        'secondary': '#F9A524', 
         'third': '#374151', 
         'background': '#F3F4F6',
+        'paragraph': '#7c7c82',
       },
       fontSize: {
         // my custom font sizes 
