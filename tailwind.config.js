@@ -15,7 +15,7 @@ export default {
         'secondary': '#F9A524', 
         'third': '#374151', 
         'background': '#F3F4F6',
-        'paragraph': '#7c7c82',
+        'paragraph': '#1D306D',
       },
       fontSize: {
         // my custom font sizes 

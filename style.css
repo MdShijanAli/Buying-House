@@ -22,11 +22,11 @@ body{
 
 
 /* header hover */
-.menu-item {
+.menu-item, .sub-menu {
   position: relative;
 }
 
-.menu-item::before {
+.menu-item::before, .sub-menu::before {
   content: "";
   position: absolute;
   left: 0;
@@ -37,7 +37,7 @@ body{
   transition: width 0.3s ease-in-out; /* Adjust the duration as needed */
 }
 
-.menu-item:hover::before {
+.menu-item:hover::before, .sub-menu:hover::before {
   width: 100%;
 }
 
@@ -64,62 +64,53 @@ body{
 
 
 /* 
-.animate-left {
-  animation: slideFromLeft 1s ease-in-out forwards;
+/* Animation for h1 (left to right) */
+.animate-slide-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-
-.animate-right {
-  animation: slideFromRight 1s ease-in-out forwards;
+.slide-in-left {
+  animation: slideFromLeft 1s ease forwards;
 }
 
-
-.animate-top {
-  animation: slideFromTop 1s ease-in-out forwards;
+.slide-in-right {
+  animation: slideFromRight 1s ease forwards;
 }
 
+.slide-in-top {
+  animation: slideFromTop 1s ease forwards;
+}
 
 @keyframes slideFromLeft {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideFromRight {
   0% {
     transform: translateX(100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideFromTop {
   0% {
     transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
- */
-
- .animate-slide-in-left {
-  transform: translateX(-100%);
-  transition: transform 1s ease-in-out;
-}
-/*  .animate-slide-in-right {
-  transform: translateX(100%);
-  transition: transform 1s ease-in-out;
-} */
-
-.slide-in {
-  transform: translateX(0);
-}
-/* .slide-in-right {
-  transform: translateX(0);
-}
- */

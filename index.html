@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <style>
+      .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 25px;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color:#1E2453;
+    font-weight:900
+}
+.swiper-pagination-bullet{
+  width:15px;
+  height: 15px
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+    cursor: pointer;
+    background: #1E2453;
+    border:2px solid #fff;
+}
+    </style>
   </head>
   <body>
    
@@ -18,41 +40,49 @@
  <nav class="bg-[#ffffff99] backdrop-blur-md shadow-md z-50 sticky top-0">
   <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
     <div class="lg:flex items-center justify-between w-full">
-          <div class="w-[200px] p-3">
+          <div class="w-[200px]">
             <a href="/" class="flex items-center">
               <img src="./images/logo.png" class="h-full w-full mr-3" alt="Logo">
           </a>
           </div>
   
           <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
-            <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 p-4 md:p-0 mt-4 font-semibold text-primary ">
+            <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row font-semibold text-primary ">
               <li>
-                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="/">
+                    <a class=" pb-2 menu-item lg:my-0 border border-white p-2 " href="/">
                     Home 
                   </a>
                 </li>
                 <li>
-                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/about.html"> 
+                    <a class=" pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/about.html"> 
                     About Us
                   </a>
                   </li>
-                  <li>
-                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/products.html">
-                    Products
-                  </a>
+                  <li class="group relative">
+                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 flex items-center" href="./pages/products.html">
+                      Products
+                      <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                      <ul class=" w-[200px] text-center absolute  left-0 mt-2 bg-white border border-gray-200 rounded-lg block">
+                        <li class="py-3 w-full"><a class="sub-menu w-full pb-2" href="#">Sub-Item 1</a></li>
+                        <li class="py-3 w-full"><a class="sub-menu w-full pb-2" href="#">Sub-Item 2</a></li>
+                        <li class="py-3 w-full"><a class="sub-menu w-full pb-2" href="#">Sub-Item 3</a></li>
+                      </ul>
+                    </a>
                   </li>
                   <li>
-                     <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/gallery.html">
+                     <a class=" pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/gallery.html">
                     Gallery
                   </a>
                   </li>
                   <li>
-                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/career.html">
+                    <a class=" pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/career.html">
                     Career
                   </a>
                   </li>
                   <li >
-                    <a class="my-3 pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/contact.html">
+                    <a class=" pb-2 menu-item lg:my-0 border border-white p-2 " href="./pages/contact.html">
                     Contact Us
                   </a>
                   </li>
@@ -103,10 +133,10 @@
         <img src="https://img1.wsimg.com/isteam/stock/4282/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m" class="w-full h-full brightness-50" alt="Nature">
         <div class="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white ">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
-        <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-        <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
+        <p class="text-md md:text-xl w-1/2 py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+        <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4 animate-top">See More</button>
       </div>
       
     </div>
@@ -116,10 +146,11 @@
         <div class="absolute inset-0 bg-black opacity-30"></div>
     </div>
     <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
-      <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
+      <p class="text-md md:text-xl w-1/2 py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4 animate-top">See More</button>
     </div>
+
     </div>
     <div class="swiper-slide fade relative">
       <div class="md:h-[800px] h-[500px] w-full relative flex items-center">
@@ -127,15 +158,16 @@
         <div class="absolute inset-0 bg-black opacity-30"></div>
     </div>
     <div class="max-w-7xl mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-slide-in-left">apparel Horizon</h1>
-      <p class="text-md md:text-xl w-1/2 py-5 animate-slide-in-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4">See More</button>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
+      <p class="text-md md:text-xl w-1/2 py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
+      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white px-6 py-2 mt-4 animate-top">See More</button>
     </div>
+
     </div>
   
   </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next bg-[#ffffff99] text-primary p-6 rounded-full"></div>
+  <div class="swiper-button-prev bg-[#ffffff99] text-primary p-6 rounded-full"></div>
   <div class="swiper-pagination"></div>
 </div>
 
@@ -154,7 +186,7 @@
     
   
   <div class=" grid md:grid-cols-2 gap-10 items-center">
-        <div class="">
+        <div class="animate__animated animate__backInLeft">
           <img class="w-full" src="https://img1.wsimg.com/isteam/stock/3458/:/cr=t:10.71%25,l:0%25,w:79.17%25,h:89.29%25/rs=w:600,h:451,cg:true,m" alt="">
         </div>
         <div class="sm:p-10 text-center sm:text-left">
@@ -215,7 +247,7 @@
            </div>
            <div class="text-center">
             <h2 class="text-h2 font-semibold my-5">Quality Advantage</h2>
-            <p class="text-paragraph font-semibold font-base leading-8 tracking-wider px-5">The quality you seek is the quality we deliver.</p>
+            <p class="text-paragraph font-medium font-base leading-8 tracking-wider px-5">The quality you seek is the quality we deliver.</p>
            </div>
        </div>
        
@@ -378,37 +410,44 @@
         prevEl: ".swiper-button-prev",
       },
 
-      on: {
-      slideChangeTransitionStart: function () {
-        // Remove the animation class from all text and button elements
-        document.querySelectorAll('.animate-slide-in-left').forEach(function (element) {
-          element.classList.remove('slide-in');
-        });
 
-        // Get the active slide and its text and button elements
-        var activeSlide = this.slides[this.activeIndex];
-        var textElement = activeSlide.querySelector('.animate-slide-in-left');
-        
-        // Add a class to trigger the animation
-        textElement.classList.add('slide-in');
-      }
+
+      
+      loop: true, // Enable looping
+  on: {
+    init: function () {
+      // Trigger animation for the first slide when Swiper is initialized
+      var activeSlide = this.slides[this.activeIndex];
+      var h1Element = activeSlide.querySelector('.animate-left');
+      var pElement = activeSlide.querySelector('.animate-right');
+      var buttonElement = activeSlide.querySelector('.animate-top');
+
+      // Add the animation classes to trigger the animations
+      h1Element.classList.add('slide-in-left');
+      pElement.classList.add('slide-in-right');
+      buttonElement.classList.add('slide-in-top');
     },
-      /* on: {
-      slideChangeTransitionStart: function () {
-        // Remove the animation class from all text and button elements
-        document.querySelectorAll('. animate-slide-in-right').forEach(function (element) {
-          element.classList.remove('slide-in');
-        });
+    slideChangeTransitionStart: function () {
+      // Remove the animation classes from all text elements
+      document.querySelectorAll('.animate-slide-in').forEach(function (element) {
+        element.classList.remove('slide-in-left', 'slide-in-right', 'slide-in-top');
+      });
 
-        // Get the active slide and its text and button elements
-        var activeSlide = this.slides[this.activeIndex];
-        var textElement = activeSlide.querySelector('. animate-slide-in-right');
-        
-        // Add a class to trigger the animation
-        textElement.classList.add('slide-in-right');
-      }
-    } */
-  });
+      // Get the active slide and its text elements
+      var activeSlide = this.slides[this.activeIndex];
+      var h1Element = activeSlide.querySelector('.animate-left');
+      var pElement = activeSlide.querySelector('.animate-right');
+      var buttonElement = activeSlide.querySelector('.animate-top');
+
+      // Add the animation classes to trigger the animations
+      h1Element.classList.add('slide-in-left');
+      pElement.classList.add('slide-in-right');
+      buttonElement.classList.add('slide-in-top');
+    }
+  }
+});
+
+  
 
   </script>
   
@@ -429,11 +468,7 @@
   });
 </script>
 
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
- -->
+
 
     <!-- Javascript code stat -->
     <!-- Add this to your HTML file to include Axios -->
