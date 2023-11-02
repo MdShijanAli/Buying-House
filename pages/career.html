@@ -18,23 +18,55 @@
 
 
 <!-- Header -->
- <nav class="bg-white shadow-md z-50 sticky top-0">
+<nav class="bg-primary/90 text-white backdrop-blur-md shadow-md z-50 sticky top-0">
   <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
     <div class="lg:flex items-center justify-between w-full">
-          <div class="w-[200px] p-3">
+          <div class="w-[200px]">
             <a href="/" class="flex items-center">
-              <img src="../images/logo.png" class="h-full w-full mr-3" alt="Logo">
+              <img src="../images/white.png" class="h-full w-full mr-3" alt="Logo">
           </a>
           </div>
   
           <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
-            <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 p-4 md:p-0 mt-4 font-semibold text-primary border border-gray-100 rounded-lg bg-gray-50 md:border-0 md:bg-white">
-                <a href="/"><li class="my-3 pb-1 menu-item lg:my-0">Home </li></a>
-                <a href="./about.html"> <li class="my-3 pb-1 menu-item lg:my-0">About Us</li></a>
-                <a href="./products.html"><li class="my-3 pb-1 menu-item lg:my-0">Products</li></a>
-                <a href="./gallery.html"> <li class="my-3 pb-1 menu-item lg:my-0">Gallery</li></a>
-                <a href="./career.html"><li class="my-3 pb-1 menu-item lg:my-0">Career</li></a>
-                <a href="./contact.html"><li class="my-3 pb-1 menu-item lg:my-0">Contact Us</li></a>
+            <ul class="main-menu flex lg:gap-8 lg:items-center flex-col lg:flex-row font-semibold ">
+              <li>
+                    <a class=" pb-2 menu-item lg:my-0 p-2" href="/">
+                    Home 
+                  </a>
+                </li>
+                <li>
+                    <a class=" pb-2 menu-item lg:my-0 p-2" href="./about.html"> 
+                    About Us
+                  </a>
+                  </li>
+                  <li class=" py-8">
+                    <a class=" flex items-center" href="./products.html">
+                      Products
+                      <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                      <ul class="text-center absolute mt-8 bg-white text-primary border  rounded-lg">
+                        <li class="w-full"><a class="sub-menu w-full p-2 block" href="#">Sub-Item 1</a></li>
+                        <li class="w-full"><a class="sub-menu w-full p-2 block" href="#">Sub-Item 2</a></li>
+                        <li class="w-full"><a class="sub-menu w-full p-2 block rounded-b" href="#">Sub-Item 3</a></li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li>
+                     <a class=" pb-2 menu-item lg:my-0 p-2 " href="./gallery.html">
+                    Gallery
+                  </a>
+                  </li>
+                  <li>
+                    <a class=" pb-2 menu-item lg:my-0 p-2 active" href="./career.html">
+                    Career
+                  </a>
+                  </li>
+                  <li >
+                    <a class=" pb-2 menu-item lg:my-0 p-2 " href="./contact.html">
+                    Contact Us
+                  </a>
+                  </li>
             </ul>
           </div>
     </div>
@@ -59,13 +91,47 @@
       <img src="../images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
   </a>
   </div>
-  <ul class="flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
-    <a href="/"><li class="my-3 pb-1 menu-item lg:my-0">Home </li></a>
-    <a href="./about.html"> <li class="my-3 pb-1 menu-item lg:my-0">About Us</li></a>
-    <a href="./products.html"><li class="my-3 pb-1 menu-item lg:my-0">Products</li></a>
-    <a href="./gallery.html"> <li class="my-3 pb-1 menu-item lg:my-0">Gallery</li></a>
-    <a href="./career.html"><li class="my-3 pb-1 menu-item lg:my-0">Career</li></a>
-    <a href="./contact.html"><li class="my-3 pb-1 menu-item lg:my-0">Contact Us</li></a>
+  <ul class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
+    <li class="my-3">
+        <a class="pb-2 menu-item block" href="/">
+        Home 
+      </a>
+      </li>
+       <li class="my-3">
+         <a class="pb-2 menu-item block" href="./about.html">
+          About Us
+        </a>
+       </li>
+       <li class="my-3 relative">
+        <a class="flex items-center" href="./products.html">
+          Products
+          <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+          <ul class=" w-full my-2 text-center bg-gray-200">
+            <li class="w-full delay-100"><a class="sub-menu w-full p-2 block" href="#">Sub-Item 1</a></li>
+            <li class="w-full delay-200"><a class="sub-menu w-full p-2 block" href="#">Sub-Item 2</a></li>
+            <li class="w-full delay-300"><a class="sub-menu w-full p-2 block" href="#">Sub-Item 3</a></li>
+          </ul>
+        </a>
+      </li>
+      
+      
+      <li class="my-3">
+        <a class="pb-2 menu-item block" href="./gallery.html"> 
+        Gallery
+      </a>
+      </li>
+      <li class="my-3">
+        <a class="pb-2 menu-item block active" href="./career.html">
+        Career
+      </a>
+      </li>
+      <li class="my-3">
+        <a class="pb-2 menu-item block" href="./contact.html"> 
+        Contact Us
+      </a>
+      </li>
 </ul>
 </div>
   </div>
@@ -75,9 +141,9 @@
 <!-- Career Page Content Start -->
 
 
-  <div class="bg-cover py-20 brightness-25 overflow-y-scroll bg-fixed bg-center bg-no-repeat" style="background-image: url(../images/Career.jpg);">
-  <div class="max-w-7xl mx-auto px-6 py-20">
-      <h1 class="text-7xl text-white text-center font-medium">Career With Us</h1>
+<div class="bg-about bg-cover lg:py-20 md:py-10 brightness-25 overflow-y-scroll bg-fixed bg-center bg-no-repeat" style="background-image: url(../images/Career.jpg);">
+  <div class="max-w-7xl mx-auto px-6 lg:py-20 md:py-16 py-10">
+      <h1 class="lg:text-7xl md:text-5xl text-3xl text-white text-center font-medium">Career With Us</h1>
     </div>
   </div>
 

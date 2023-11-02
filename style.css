@@ -19,27 +19,88 @@ body{
   font-family: 'Atiba';
 } */
 
+/* navbar */
 
-
-/* header hover */
-.menu-item, .sub-menu {
-  position: relative;
+.active{
+  color: #F9A524;
 }
 
-.menu-item::before, .sub-menu::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #1E2453; /* Change to your desired hover color */
-  transition: width 0.3s ease-in-out; /* Adjust the duration as needed */
-}
-
-.menu-item:hover::before, .sub-menu:hover::before {
+ .menu-item:hover::before {
+  transform: scale(1);
   width: 100%;
 }
+.menu-item {
+  position: relative;
+  text-align: center;
+}
+.menu-item a {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+.sub-menu .menu-item {
+  padding: 0.75rem 0;
+  background: #1E2453;
+  opacity: 0;
+  width: 200px;
+  transform-origin: bottom;
+  animation: enter 0.2s ease forwards;
+}
+.sub-menu .menu-item:nth-child(1) {
+  animation-duration: 0.2s;
+  animation-delay: 0s;
+}
+.sub-menu .menu-item:nth-child(2) {
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+}
+.sub-menu .menu-item:nth-child(3) {
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
+}
+.sub-menu .menu-item:hover {
+  background: #343964;
+}
+.sub-menu .menu-item a {
+  padding: 0 0.75rem;
+}
+
+
+
+
+/* .sub-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: -20px;
+  display: none;
+  z-index: 1;
+} */
+
+
+
+
+
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: scaleY(0.98) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 
 /* 
@@ -58,6 +119,12 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .slider-button{
+    display:none !important;
+  }
+ }
 
 
 
