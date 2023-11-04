@@ -14,7 +14,7 @@ export default {
         'primary': '#1E2453', 
         'secondary': '#F9A524', 
         'third': '#374151', 
-        'background': '#F3F4F6',
+        'background': '#E7F0FD',
         'paragraph': '#1D306D',
       },
       fontSize: {
@@ -26,12 +26,14 @@ export default {
         'h2': '1.5rem',
         'h1': '2.5rem',
       },
+      boxShadow: {
+        'bottom-right': '8px 8px 7px rgba(0,0,0,.3)',
+      },
       
     },
   },
   plugins: [
     require('flowbite/plugin'),
   ],
- 
- 
+  
 }

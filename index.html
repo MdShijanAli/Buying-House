@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="./images/favicon.webp" />
@@ -11,56 +12,59 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <style>
-      .swiper-button-next:after, .swiper-button-prev:after {
-    font-family: swiper-icons;
-    font-size: 25px;
-    text-transform: none!important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-    color:#1E2453;
-    font-weight:900
-}
-.swiper-pagination-bullet{
-  width:15px;
-  height: 15px
-}
-.swiper-pagination-clickable .swiper-pagination-bullet-active {
-    cursor: pointer;
-    background: #1E2453;
-    border:2px solid #fff;
-}
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: 25px;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        color: #1E2453;
+        font-weight: 900
+      }
 
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px
+      }
 
+      .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        cursor: pointer;
+        background: #1E2453;
+        border: 2px solid #fff;
+      }
     </style>
   </head>
+
   <body>
-   
+
 
 
     <div class="capitalize bg-red-500 font-semibold text-white p-2 text-center">this website is under construction</div>
-<!-- Header -->
- <nav class="bg-primary/90 text-white backdrop-blur-md shadow-md z-50 sticky top-0">
-  <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
-    <div class="lg:flex items-center justify-between w-full">
+    <!-- Header -->
+    <nav class="bg-primary/90 text-white backdrop-blur-md shadow-md z-50 sticky top-0 py-1">
+      <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
+        <div class="lg:flex items-center justify-between w-full">
           <div class="lg:w-[200px] w-[100px]">
             <a href="/" class="flex items-center">
               <img src="./images/white.png" class="h-full w-full mr-3" alt="Logo">
-          </a>
+            </a>
           </div>
-  
+
           <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
             <nav class="menu">
               <ul class="flex gap-10">
                 <li class=""><a class="hover:text-secondary active" href="/">Home</a></li>
                 <li class=""><a class="hover:text-secondary" href="./pages/about.html">About Us</a></li>
                 <li class="menu-item group cursor-pointer flex items-center ">
-                 <span class="hover:text-secondary text-[15px]">
-                  Products
-                 </span>
-                 <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
+                  <span class="hover:text-secondary text-[15px]">
+                    Products
+                  </span>
+                  <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
                   <ul class="sub-menu absolute group-hover:block w-full top-[100%] -left-5 hidden z-10">
                     <li class="menu-item leading-8"><a class="hover:text-secondary" href="#0">Big Widgets</a></li>
                     <li class="menu-item leading-8"><a class="hover:text-secondary" href="#0">Bigger Widgets</a></li>
@@ -73,375 +77,490 @@
               </ul>
             </nav>
           </div>
-    </div>
+        </div>
 
-<div class="text-center">
-  <button class="inline-flex lg:hidden items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg  hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary  " type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-    <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-  </svg>
-  </button>
-</div>
+        <div class="text-center">
+          <button
+            class="inline-flex lg:hidden items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg  hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary  "
+            type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation">
+            <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
 
-<div id="drawer-navigation" class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
-  <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
-    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-    </svg>
-    <span class="sr-only">Close menu</span>
- </button>
-  <div class="w-[150px] mx-auto">
-    <a href="/" class="flex items-center">
-      <img src="./images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
-  </a>
-  </div>
-  <ul class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
-    <li class=" hover:text-secondary">
-        <a class=" p-3 block active " href="/">
-        Home 
-      </a>
-      </li>
-       <li class="hover:text-secondary">
-         <a class="p-3 block " href="./pages/about.html">
-          About Us
-        </a>
-       </li>
-  
-
-      <li>
-        <details class="group">
-
-            <summary
-                class="flex items-center justify-between gap-2 p-3 font-medium marker:content-none hover:cursor-pointer">
-                    <li class="hover:text-secondary">
-                        Products
-                    </li>
-            
-                <svg class="w-5 h-5 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-                    </path>
-                </svg>
+        <div id="drawer-navigation"
+          class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+          tabindex="-1" aria-labelledby="drawer-navigation-label">
+          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="w-[150px] mx-auto">
+            <a href="/" class="flex items-center">
+              <img src="./images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
+            </a>
+          </div>
+          <ul
+            class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
+            <li class=" hover:text-secondary">
+              <a class=" p-3 block active " href="/">
+                Home
+              </a>
+            </li>
+            <li class="hover:text-secondary">
+              <a class="p-3 block " href="./pages/about.html">
+                About Us
+              </a>
+            </li>
+            <li>
+              <details class="group">
+                <summary
+                  class="flex items-center justify-between gap-2 p-3 font-medium marker:content-none hover:cursor-pointer">
+            <li class="hover:text-secondary">
+              Products
+            </li>
+            <svg class="w-5 h-5 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+              </path>
+            </svg>
             </summary>
-
             <article class="px-4 pb-4">
-
-                <ul class="flex flex-col gap-4 pl-2 mt-4">
-
-                    <li class="hover:text-secondary">
-                        <a href="http://127.0.0.1:8000/user/dashboard">
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="hover:text-secondary">
-                        <a href="http://127.0.0.1:8000/user/dashboard">
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="hover:text-secondary">
-                        <a href="http://127.0.0.1:8000/user/dashboard">
-                            Dashboard
-                        </a>
-                    </li>
-
-                </ul>
-
+              <ul class="flex flex-col gap-4 pl-2 mt-4">
+                <li class="hover:text-secondary">
+                  <a href="http://127.0.0.1:8000/user/dashboard">
+                    Dashboard
+                  </a>
+                </li>
+                <li class="hover:text-secondary">
+                  <a href="http://127.0.0.1:8000/user/dashboard">
+                    Dashboard
+                  </a>
+                </li>
+                <li class="hover:text-secondary">
+                  <a href="http://127.0.0.1:8000/user/dashboard">
+                    Dashboard
+                  </a>
+                </li>
+              </ul>
             </article>
-
-        </details>
-    </li>
-
-      
-      
-      <li class="hover:text-secondary">
-        <a class="p-3 block" href="./pages/gallery.html"> 
-        Gallery
-      </a>
-      </li>
-      <li class="hover:text-secondary">
-        <a class="p-3 block" href="./pages/career.html">
-        Career
-      </a>
-      </li>
-      <li class="hover:text-secondary">
-        <a class="p-3 block" href="./pages/contact.html"> 
-        Contact Us
-      </a>
-      </li>
-</ul>
-</div>
-  </div>
-</nav>
-
-
-
-
-<!-- slider -->
-
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide fade relative">
-      <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
-        <img src="https://img1.wsimg.com/isteam/stock/4282/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m" class="w-full h-full brightness-50 bg-cover" alt="Nature">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
-      </div>
-      <div class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
-        <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-        <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See More</button>
-      </div>
-      
-    </div>
-    <div class="swiper-slide fade relative">
-      <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
-        <img src="./images/Bitmaddp-scaled-copy-2.webp" class="w-full h-full brightness-50" alt="Nature">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
-    </div>
-    <div class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
-      <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See More</button>
-    </div>
-
-    </div>
-    <div class="swiper-slide fade relative">
-      <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
-        <img src="https://ananta-bd.com/wp-content/uploads/2021/06/anastase-maragos-ZUBNPRZsQvk-unsplash.jpg" class="w-full h-full brightness-50" alt="Nature">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
-    </div>
-    <div class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">apparel Horizon</h1>
-      <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales & customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.</p>
-      <button class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See More</button>
-    </div>
-
-    </div>
-  
-  </div>
-  <div class="swiper-button-next bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
-  <div class="swiper-button-prev bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
-  <div class="swiper-pagination"></div>
-</div>
-
-
-
-
-<!-- about us section -->
-
-<div class="">
-  <div class="max-w-7xl mx-auto px-6  py-10">
-    <div class="xl:w-1/2 md:w-2/3 mx-auto text-center mb-10 pt-10">
-      <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold">About Us</h1>
-      <p class="my-3 text-sm lg:text-base leading-6 tracking-wide">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
-    </div>
-       
-    
-  
-  <div class=" grid md:grid-cols-2 gap-10 items-center">
-        <div class="animate__animated animate__backInLeft">
-          <img class="w-full" src="https://img1.wsimg.com/isteam/stock/3458/:/cr=t:10.71%25,l:0%25,w:79.17%25,h:89.29%25/rs=w:600,h:451,cg:true,m" alt="">
+            </details>
+            </li>
+            <li class="hover:text-secondary">
+              <a class="p-3 block" href="./pages/gallery.html">
+                Gallery
+              </a>
+            </li>
+            <li class="hover:text-secondary">
+              <a class="p-3 block" href="./pages/career.html">
+                Career
+              </a>
+            </li>
+            <li class="hover:text-secondary">
+              <a class="p-3 block" href="./pages/contact.html">
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="sm:p-10 text-center sm:text-left">
-          <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold ">One of the biggest conglomerates in Bangladesh.</h2>
-          <p class="py-4 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">The legacy of AKIJ GROUP is over half a century old and over the years Akij has established itself as the full of confidence and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities & different products. <br class="hidden sm:block">
-            Akij Group launched its venture as a small jute trader more than 50 years ago.</p>
-          <a href="">
-            <button class="bg-primary hover:bg-secondary text-white px-6 py-2 mt-4 transition duration-700 ease-in-out">Learn More</button>
-          </a>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide fade relative">
+          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+            <img src="https://img1.wsimg.com/isteam/stock/4282/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m"
+              class="w-full h-full brightness-50 bg-cover" alt="Nature">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+          </div>
+          <div
+            class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">
+              apparel Horizon</h1>
+            <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales &
+              customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.
+            </p>
+            <button
+              class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See
+              More</button>
+          </div>
+
         </div>
-  </div>
-</div>
-</div>
+        <div class="swiper-slide fade relative">
+          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+            <img src="./images/Bitmaddp-scaled-copy-2.webp" class="w-full h-full brightness-50" alt="Nature">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+          </div>
+          <div
+            class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">
+              apparel Horizon</h1>
+            <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales &
+              customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.
+            </p>
+            <button
+              class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See
+              More</button>
+          </div>
 
+        </div>
+        <div class="swiper-slide fade relative">
+          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+            <img src="https://ananta-bd.com/wp-content/uploads/2021/06/anastase-maragos-ZUBNPRZsQvk-unsplash.jpg"
+              class="w-full h-full brightness-50" alt="Nature">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+          </div>
+          <div
+            class="md:max-w-7xl w-full mx-auto px-6 text-center absolute inset-0 flex flex-col items-center justify-center text-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold uppercase animate-left">
+              apparel Horizon</h1>
+            <p class="text-sm sm:text-lg md:text-xl md:w-2/3 lg:w-1/2 w-full py-5 animate-right">UK based sales &
+              customer service, specializing in all aspects of apparel sourcing & supply to UK-based brands & retailers.
+            </p>
+            <button
+              class="bg-primary hover:bg-secondary transition duration-700 ease-in-out text-white text-sm sm:text-md md:text-lg px-3 sm:px-4 py-2 md:px-6 md:py-2 mt-3 md:mt-4 animate-top">See
+              More</button>
+          </div>
 
+        </div>
 
+      </div>
+      <div class="swiper-button-next bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
+      <div class="swiper-button-prev bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-<!-- why choose us section -->
+    <!-- about us section -->
+    <div>
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center">
+          <p class="sm:text-base text-sm">All you need to know</p>
+          <h2 class="md:text-h2 text-h3 font-semibold">About Apprel Horizon Group</h2>
+        </div>
+        <div class="grid md:grid-cols-4 grid-cols-2 sm:gap-10 gap-5 mt-10">
+          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2 w-10 h-10 md:w-16 md:h-16 mx-auto text-primary"
+              viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+              <path d="M10 12h4v4h-4z"></path>
+            </svg>
+            <p class="font-medium sm:text-base break-all text-sm mb-2">Since</p>
+            <h2 class="md:text-h2 text-h3 tracking-wider">1950</h2>
+          </div>
+          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory-2 w-10 h-10 md:w-16 md:h-16 mx-auto text-primary" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 21h18"></path>
+              <path d="M5 21v-12l5 4v-4l5 4h4"></path>
+              <path d="M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582">
+              </path>
+              <path d="M9 17h1"></path>
+              <path d="M14 17h1"></path>
+            </svg>
+            <p class="font-medium sm:text-base break-all text-sm mb-2">Units</p>
+            <h2 class="md:text-h2 text-h3 tracking-wider">31</h2>
+          </div>
+          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group w-10 h-10 md:w-16 md:h-16 mx-auto text-primary" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+              <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"></path>
+              <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+              <path d="M17 10h2a2 2 0 0 1 2 2v1"></path>
+              <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+              <path d="M3 13v-1a2 2 0 0 1 2 -2h2"></path>
+            </svg>
+            <p class="font-medium sm:text-base break-all text-sm mb-2">Employees</p>
+            <h2 class="md:text-h2 text-h3 tracking-wider">35053</h2>
+          </div>
+          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trophy w-10 h-10 md:w-16 md:h-16 mx-auto text-primary"
+              viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M8 21l8 0"></path>
+              <path d="M12 17l0 4"></path>
+              <path d="M7 4l10 0"></path>
+              <path d="M17 4v8a5 5 0 0 1 -10 0v-8"></path>
+              <path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+              <path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            </svg>
+            <p class="font-medium sm:text-base break-all text-sm mb-2">National Achievements</p>
+            <h2 class="md:text-h2 text-h3 tracking-wider">25</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div>
-  <div class="max-w-7xl mx-auto px-6 md:py-10">
-  <div class="md:w-1/2 mx-auto text-center mb-10">
-    <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold">Why Choose Us</h1>
-    <p class="my-3 text-sm lg:text-base leading-6 tracking-wide">Fashionplus International is a UK based sales office offering an outstanding supply chain management service to clothing brands and retailers.</p>
-  </div>
+    <div class="bg-background">
+      <div class="max-w-7xl mx-auto px-6  md:py-20 py-10">
   
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 pt-10">
-       <div class="group">
-           <div class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
-            <svg class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-              <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
-            </svg>
-            <div class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0"></div>
-           </div>
-           <div class="text-center">
-            <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Cost Advantage</h2>
-            <p class="text-sm lg:text-base leading-6 tracking-wide px-5">We focus exceedingly on the the cost advantage of our production.</p>
-           </div>
-       </div>
-       <div class="group">
-           <div class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
-            <svg class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-              <path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"/>
-            </svg>
-            <div class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0"></div>
-           </div>
-           <div class="text-center">
-            <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Technological Advantage</h2>
-            <p class="text-sm lg:text-base leading-6 tracking-wide px-5">We put great effort to ensure the efficiency on the technological aspects.</p>
-           </div>
-       </div>
-       <div class="group">
-           <div class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
-            <svg class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-              <path d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8v0c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2v0c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2v0c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2v0c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8v0c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320v0c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256v0C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2v0z"/>
-            </svg>
-            <div class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0"></div>
-           </div>
-           <div class="text-center">
-            <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Quality Advantage</h2>
-            <p class="text-sm lg:text-base leading-6 tracking-wide px-5">The quality you seek is the quality we deliver.</p>
-           </div>
-       </div>
-       
-  </div>
+        <div class="grid md:grid-cols-2 md:gap-10 gap-5 items-center">
+          <div class="relative overflow-hidden">
+            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://akij.net/img/Founder-image.jpg" alt="Nature" class="w-full">
+            <div class="absolute bottom-4 right-4 bg-white rounded-md sm:p-4 p-2">
+                <div class="flex sm:gap-3 gap-2 items-center">
+                  <div>
+                    <img class="sm:w-12 w-8 overflow-hidden" src="./images//logo.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="sm:text-lg text-md font-semibold text-primary">SK. ATICK RAHMAN</h4>
+                    <p class="text-sm text-secondary">Founder</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class=" text-center sm:text-left">
+            <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold ">One of the biggest conglomerates in Bangladesh.
+            </h2>
+            <p class="py-4 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">The legacy of AKIJ
+              GROUP is over half a century old and over the years Akij has established itself as the full of confidence
+              and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities &
+              different products. <br class="hidden sm:block">
+              Akij Group launched its venture as a small jute trader more than 50 years ago.</p>
+            <a href="">
+              <button
+                class="bg-primary hover:bg-secondary text-white px-6 py-2 mt-4 transition duration-700 ease-in-out">Learn
+                More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- why choose us section -->
+    <div>
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="md:w-1/2 mx-auto text-center mb-10">
+          <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold">Why Choose Us</h1>
+          <p class="my-3 text-sm lg:text-base leading-6 tracking-wide">Fashionplus International is a UK based sales
+            office offering an outstanding supply chain management service to clothing brands and retailers.</p>
+        </div>
 
-  <div class="mt-20 grid lg:grid-cols-5 gap-5 lg:gap-0 sm:grid-cols-2 sm:items-center sm:pb-10">
-    <div class="lg:col-span-3 sm:col-span-1">
-      <img class="rounded-md" src="https://www.standard-group.com/wp-content/uploads/2021/01/about.jpg" alt="">
-
-      <div class="bg-primary text-white text-center lg:w-2/3 mt-10 rounded-md">
-          <p class="flex gap-5 text-h1 items-center justify-center p-10">
-            <span>
-              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 pt-10">
+          <div class="group">
+            <div
+              class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
+              <svg
+                class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full"
+                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path
+                  d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
               </svg>
-            </span>
-            <span>98903 +</span>
-          </p>
-          <hr>
-          <p class=" text-sm lg:text-base lg:leading-8 leading-6 tracking-wide p-3">Client success stories</p>
+              <div
+                class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0">
+              </div>
+            </div>
+            <div class="text-center">
+              <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Cost Advantage</h2>
+              <p class="text-sm lg:text-base leading-6 tracking-wide px-5">We focus exceedingly on the the cost
+                advantage of our production.</p>
+            </div>
+          </div>
+          <div class="group">
+            <div
+              class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
+              <svg
+                class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full"
+                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path
+                  d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z" />
+              </svg>
+              <div
+                class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0">
+              </div>
+            </div>
+            <div class="text-center">
+              <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Technological Advantage</h2>
+              <p class="text-sm lg:text-base leading-6 tracking-wide px-5">We put great effort to ensure the efficiency
+                on the technological aspects.</p>
+            </div>
+          </div>
+          <div class="group">
+            <div
+              class="p-10 bg-blue-50 group-hover:bg-primary transition duration-500 ease-in-out w-40 h-40 mx-auto rounded-full relative">
+              <svg
+                class="w-14 fill-primary group-hover:fill-secondary transition duration-500 ease-in-out mx-auto flex items-center justify-center h-full"
+                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path
+                  d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8v0c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2v0c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2v0c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2v0c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8v0c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320v0c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256v0C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2v0z" />
+              </svg>
+              <div
+                class="w-10 h-10 bg-primary group-hover:bg-white transition duration-500 ease-in-out rounded-full absolute left-4 bottom-0">
+              </div>
+            </div>
+            <div class="text-center">
+              <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Quality Advantage</h2>
+              <p class="text-sm lg:text-base leading-6 tracking-wide px-5">The quality you seek is the quality we great effort to ensure
+                deliver.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
-    <div class="lg:p-20 md:p-5 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1">
-      <h1 class="text-lg md:text-h3 lg:text-h2 font-semibold ">International standards and compliances measures</h1>
-      <p class="lg:mt-10 mt-5 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">New international standards and compliances measures set by International Agencies and the valued customers are something that Standard Group always looks forward to. We maintain a professional culture that abides by ethics, employee standards, industry standards, and legal compliances. Our business growth is directly transformed into reality within these compliances.</p>
+    
+    <div class="bg-background">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid lg:grid-cols-5 gap-5 lg:gap-0 sm:grid-cols-2 sm:items-center">
+          <div class="lg:col-span-3 sm:col-span-1 overflow-hidden">
+            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://www.standard-group.com/wp-content/uploads/2021/01/about.jpg" alt="">
+
+            <div class="bg-primary text-white text-center lg:w-2/3 mt-10 rounded-md">
+              <p class="flex gap-5 text-h1 items-center justify-center p-10">
+                <span>
+                  <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg>
+                </span>
+                <span>98903 +</span>
+              </p>
+              <hr>
+              <p class=" text-sm lg:text-base lg:leading-8 leading-6 tracking-wide p-3">Client success stories</p>
+            </div>
+          </div>
+          <div class="lg:p-20 md:p-10 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1 p-5 z-10">
+            <h1 class="text-lg md:text-h3 lg:text-h2 font-semibold ">International standards and compliances measures
+            </h1>
+            <p class="lg:mt-10 mt-5 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">New
+              international standards and compliances measures set by International Agencies and the valued customers
+              are something that Standard Group always looks forward to. We maintain a professional culture that abides
+              by ethics, employee standards, industry standards, and legal compliances. Our business growth is directly
+              transformed into reality within these compliances.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
+    <!-- our clients -->
+    <div class="">
+      <div class="max-w-7xl mx-auto px-6 py-10 pb-10">
+        <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center">Our Clients</h1>
 
 
 
-
-
-
-
-  <!-- our clients -->
-  <div>
-    <div class="max-w-7xl mx-auto px-6 py-10 pb-10">
-            <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center">Our Clients</h1>
-
-
-
-<div class="relative glide-08 md:mt-10 mt-5 overflow-hidden">
-  <!-- Slides -->
-  <div data-glide-el="track">
-      <ul class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex  overflow-hidden p-0 md:pb-12 pb-5">
-          <li>
-              <div class="w-full h-full">
+        <div class="relative glide-08 md:mt-10 mt-5 overflow-hidden">
+          <!-- Slides -->
+          <div data-glide-el="track">
+            <ul
+              class="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex  overflow-hidden p-0 md:pb-12 pb-5">
+              <li>
+                <div class="w-full h-full">
                   <!-- Start Testimonial -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/4.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/4.png" />
                   <!-- End Testimonial -->
-              </div>
-          </li>
-          <li>
-              <div class="w-full h-full">
+                </div>
+              </li>
+              <li>
+                <div class="w-full h-full">
                   <!-- Start PACKEGE -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/8.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/8.png" />
                   <!-- End packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/11.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/11.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/12.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/12.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/13.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/13.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/14.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/14.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/15.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/15.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/17.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/17.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-          <li>
+                </div>
+              </li>
+              <li>
 
-              <div class="w-full h-full">
+                <div class="w-full h-full">
                   <!-- Start Packege -->
-                  <img class="w-full block" src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/16.png" />
+                  <img class="w-full block"
+                    src="https://www.epicgroup.global/corpinfo21v1/wp-content/uploads/2021/07/16.png" />
                   <!-- End Packege -->
-              </div>
-          </li>
-        
-      </ul>
-  </div>
-  <!-- Indicators -->
-  <div class="flex items-center justify-center w-full gap-2" data-glide-el="controls[nav]">
-      <button class="md:p-4 p-2 group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
-      <button class="md:p-4 p-2 group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
-      <button class="md:p-4 p-2 group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
-  </div>
-</div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <!-- Indicators -->
+          <div class="flex items-center justify-center w-full gap-2" data-glide-el="controls[nav]">
+            <button class="md:p-4 p-2 group" data-glide-dir="=0" aria-label="goto slide 1"><span
+                class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
+            <button class="md:p-4 p-2 group" data-glide-dir="=1" aria-label="goto slide 2"><span
+                class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
+            <button class="md:p-4 p-2 group" data-glide-dir="=2" aria-label="goto slide 3"><span
+                class="block md:w-2 w-1 md:h-2 h-1 transition-colors duration-300 rounded-full opacity-70 ring-1 ring-primary focus:outline-none"></span></button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <!-- Footer -->
+    <div class="bg-primary text-white pt-16 pb-10">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-1 gap-10">
 
-
-
-
-
- <!-- Footer -->
- <div class="bg-primary text-white pt-16 pb-10">
-  <div class="mx-auto max-w-7xl px-6">
-     <div class="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-1 gap-10">
-         
           <div class="text-center sm:col-span-2">
             <img class="w-1/2 mx-auto" src="./images/white.png" alt="">
             <h1 class="text-lg md:text-h3 lg:text-h2 lg:mt-3 mt-2 mb-1 font-semibold">Apparel Horizon</h1>
@@ -451,209 +570,196 @@
                 <li>
                   <a href="https://www.facebook.com/tihanonline/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
-                      <path class="fill-white  hover:fill-primary" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                      <path class="fill-white  hover:fill-secondary"
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="https://twitter.com" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 512 512">
-                      <path class="fill-white  hover:fill-primary" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                      <path class="fill-white  hover:fill-secondary"
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 448 512">
-                      <path class="fill-white  hover:fill-primary" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                      <path class="fill-white  hover:fill-secondary"
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
-           </div>
+          </div>
 
-           
-            <div class="col-span-1 text-center md:text-left">
-              <h2 class="text-sm font-semibold text-white tracking-wider uppercase">quick links</h2>
+
+          <div class="col-span-1 text-center md:text-left">
+            <h2 class="text-sm font-semibold text-white tracking-wider uppercase">quick links</h2>
+            <div class="mt-5">
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="my-2"><a class="text-sm text-gray-200 hover:text-white"
+                    href="https://www.facebook.com/tihanonline/" target="_blank">Join Group</a></li>
+                <li class="my-2"><a class="text-sm text-gray-200 hover:text-white"
+                    href="https://www.facebook.com/tihanonline/" target="_blank">Like our Page</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-span-1 sm:mt-5 md:mt-0 sm:order-4 md:order-3 text-center md:text-left">
+            <h2 class="text-sm font-semibold text-white tracking-wider uppercase">legal</h2>
+            <div class="mt-5">
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="my-2"><a class="text-sm text-gray-200 hover:text-white"
+                    href="./pages/termandcondition.html">Terms & Conditions</a></li>
+                <li class="my-2"><a class="text-sm text-gray-200 hover:text-white"
+                    href="./pages/privacy-policy.html">Privacy Policy</a></li>
+                <li class="my-2"><a class="text-sm text-gray-200 hover:text-white"
+                    href="./pages/return-refund.html">Return & Refund</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="sm:col-span-2 sm:mt-5 md:mt-0  sm:order-3 md:order-4 text-center md:text-left">
+            <h2 class="text-sm font-semibold text-white tracking-wider uppercase">SUBSCRIBE TO OUR NEWSLETTER</h1>
               <div class="mt-5">
-                <ul role="list" class="mt-6 space-y-4">
-                  <li class="my-2"><a class="text-sm text-gray-200 hover:text-white" href="https://www.facebook.com/tihanonline/" target="_blank"
-                    >Join Group</a></li>
-                  <li class="my-2"><a class="text-sm text-gray-200 hover:text-white" href="https://www.facebook.com/tihanonline/" target="_blank">Like our Page</a></li>
-              
-                </ul>
+                <p class="text-sm text-gray-200 hover:text-white">The latest news, articles, and resources, sent to your
+                  inbox weekly.</p>
+
+                <form class="mt-8 sm:flex sm:max-w-md">
+                  <label for="email-address" class="sr-only">Email address</label>
+                  <input type="email" name="email-address" id="email-address" required
+                    class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-sm text-gray-900 placeholder-gray-500 focus:border-0 focus:ring-2 focus:ring-primary focus:placeholder-white"
+                    placeholder="Enter your email">
+                  <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                    <button type="submit"
+                      class="lg:w-28 sm:w-24 h-10 w-full rounded-md bg-secondary hover:bg-third transition duration-700 ease-in-out text-white">Subscribe</button>
+                  </div>
+                </form>
+
               </div>
-             </div>
+          </div>
+        </div>
 
 
-             <div class="col-span-1 sm:mt-5 md:mt-0 sm:order-4 md:order-3 text-center md:text-left">
-              <h2 class="text-sm font-semibold text-white tracking-wider uppercase">legal</h2>
-              <div class="mt-5">
-                <ul role="list" class="mt-6 space-y-4">
-                  <li class="my-2"><a class="text-sm text-gray-200 hover:text-white" href="./pages/termandcondition.html">Terms & Conditions</a></li>
-                  <li class="my-2"><a class="text-sm text-gray-200 hover:text-white" href="./pages/privacy-policy.html">Privacy Policy</a></li>
-                  <li class="my-2"><a class="text-sm text-gray-200 hover:text-white" href="./pages/return-refund.html">Return & Refund</a></li>
-                </ul>
-              </div>
-             </div>
-           
-       
-         
-         <div class="sm:col-span-2 sm:mt-5 md:mt-0  sm:order-3 md:order-4 text-center md:text-left">
-          <h2 class="text-sm font-semibold text-white tracking-wider uppercase">SUBSCRIBE TO OUR NEWSLETTER</h1>
-          <div class="mt-5">
-            <p class="text-sm text-gray-200 hover:text-white">The latest news, articles, and resources, sent to your inbox weekly.</p>
-            
-              <form class="mt-8 sm:flex sm:max-w-md">
-                <label for="email-address" class="sr-only">Email address</label>
-                <input type="email" name="email-address" id="email-address"  required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-sm text-gray-900 placeholder-gray-500 focus:border-0 focus:ring-2 focus:ring-primary focus:placeholder-white" placeholder="Enter your email">
-                <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <button type="submit" class="lg:w-28 sm:w-24 h-10 w-full rounded-md bg-secondary hover:bg-third transition duration-700 ease-in-out text-white">Subscribe</button>
-              </div>
-            </form>
-
-         </div>
-         </div>
-     </div>
+        <div class="mt-10">
+          <img src="../images/sslcommerz-foo.webp" alt="">
+        </div>
 
 
-  <div class="mt-10">
-    <img src="../images/sslcommerz-foo.webp" alt="">
-  </div>
+        <div class="mt-6">
+          <a href="https://www.zealtechbd.com/" target="_blank">
+            <p class="text-sm text-gray-200 hover:text-white text-center group">© Copyright <span id="currentYear"></span>
+              Apparel Horizon. | All Rights Reserved | Powered by <span class="group-hover:text-secondary font-semibold">ZealtechBD.</span></p>
+          </a>
+        </div>
 
- 
-    <div class="mt-6">
-      <a href="https://www.zealtechbd.com/" target="_blank">
-      <p class="text-sm text-gray-200 hover:text-white text-center">© Copyright <span id="currentYear"></span> Apparel Horizon. | All Rights Reserved | Powered by ZealtechBD.</p>
-    </a>
+      </div>
+
+
     </div>
 
-</div>
-
-
-    </div>
 
 
 
 
-    
     <script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-
-  <!-- Swiper JS -->  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-    
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
     <script>
-        var glide07 = new Glide('.glide-08', {
-            type: 'carousel',
-            focusAt: 1,
-            animationDuration: 3000,
-            autoplay: 3500,
-            autoplay: true,
-            rewind: true,
-            perView: 8,
-            gap: 25,
-            classes: {
-                activeNav: '[&>*]:bg-primary',
-            },
-            breakpoints: {
-                1170: {
-                    perView: 7,
-                    gap:30
-                },    
-                900:{
-                    perView: 6,
-                    gap:20
-                },    
-                650:{
-                    perView: 5,
-                    gap:10
-                },    
-               560: {
-                    perView: 5,             
-                    
-                }
-            },
-        });
-    
-        glide07.mount();
-    </script>
+      var glide07 = new Glide('.glide-08', {
+        type: 'carousel',
+        focusAt: 1,
+        animationDuration: 3000,
+        autoplay: 3500,
+        autoplay: true,
+        rewind: true,
+        perView: 8,
+        gap: 25,
+        classes: {
+          activeNav: '[&>*]:bg-primary',
+        },
+        breakpoints: {
+          1170: {
+            perView: 7,
+            gap: 30
+          },
+          900: {
+            perView: 6,
+            gap: 20
+          },
+          650: {
+            perView: 5,
+            gap: 10
+          },
+          560: {
+            perView: 5,
 
-
-  <!-- Initialize Swiper -->
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-
-
-      
-      loop: true, // Enable looping
-  on: {
-    init: function () {
-      // Trigger animation for the first slide when Swiper is initialized
-      var activeSlide = this.slides[this.activeIndex];
-      var h1Element = activeSlide.querySelector('.animate-left');
-      var pElement = activeSlide.querySelector('.animate-right');
-      var buttonElement = activeSlide.querySelector('.animate-top');
-
-      // Add the animation classes to trigger the animations
-      h1Element.classList.add('slide-in-left');
-      pElement.classList.add('slide-in-right');
-      buttonElement.classList.add('slide-in-top');
-    },
-    slideChangeTransitionStart: function () {
-      // Remove the animation classes from all text elements
-      document.querySelectorAll('.animate-slide-in').forEach(function (element) {
-        element.classList.remove('slide-in-left', 'slide-in-right', 'slide-in-top');
+          }
+        },
       });
 
-      // Get the active slide and its text elements
-      var activeSlide = this.slides[this.activeIndex];
-      var h1Element = activeSlide.querySelector('.animate-left');
-      var pElement = activeSlide.querySelector('.animate-right');
-      var buttonElement = activeSlide.querySelector('.animate-top');
+      glide07.mount();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-      // Add the animation classes to trigger the animations
-      h1Element.classList.add('slide-in-left');
-      pElement.classList.add('slide-in-right');
-      buttonElement.classList.add('slide-in-top');
-    }
-  }
-});  
+        loop: true, // Enable looping
+        on: {
+          init: function () {
+            // Trigger animation for the first slide when Swiper is initialized
+            var activeSlide = this.slides[this.activeIndex];
+            var h1Element = activeSlide.querySelector('.animate-left');
+            var pElement = activeSlide.querySelector('.animate-right');
+            var buttonElement = activeSlide.querySelector('.animate-top');
 
-  
+            // Add the animation classes to trigger the animations
+            h1Element.classList.add('slide-in-left');
+            pElement.classList.add('slide-in-right');
+            buttonElement.classList.add('slide-in-top');
+          },
+          slideChangeTransitionStart: function () {
+            // Remove the animation classes from all text elements
+            document.querySelectorAll('.animate-slide-in').forEach(function (element) {
+              element.classList.remove('slide-in-left', 'slide-in-right', 'slide-in-top');
+            });
 
-  </script>
-  
+            // Get the active slide and its text elements
+            var activeSlide = this.slides[this.activeIndex];
+            var h1Element = activeSlide.querySelector('.animate-left');
+            var pElement = activeSlide.querySelector('.animate-right');
+            var buttonElement = activeSlide.querySelector('.animate-top');
 
-
-
-
-
-
-    <!-- Javascript code stat -->
-    <!-- Add this to your HTML file to include Axios -->
-
-
+            // Add the animation classes to trigger the animations
+            h1Element.classList.add('slide-in-left');
+            pElement.classList.add('slide-in-right');
+            buttonElement.classList.add('slide-in-top');
+          }
+        }
+      });
+    </script>
   </body>
 </html>
