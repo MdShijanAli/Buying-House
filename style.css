@@ -23,6 +23,7 @@ body{
 
 .active{
   color: #F9A524;
+  font-weight: 600;
 }
 
  .menu-item:hover::before {
@@ -40,7 +41,7 @@ body{
 }
 .sub-menu .menu-item {
   padding: 0.75rem 0;
-  background: #1E2453;
+  background: #343964;
   opacity: 0;
   width: 200px;
   transform-origin: bottom;
@@ -58,24 +59,24 @@ body{
   animation-duration: 0.4s;
   animation-delay: 0.2s;
 }
+.sub-menu .menu-item:nth-child(4) {
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+}
+.sub-menu .menu-item:nth-child(5) {
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
+}
+.sub-menu .menu-item:nth-child(6) {
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+}
 .sub-menu .menu-item:hover {
-  background: #343964;
+  background: #1E2453;
 }
 .sub-menu .menu-item a {
   padding: 0 0.75rem;
 }
-
-
-
-
-/* .sub-menu {
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: -20px;
-  display: none;
-  z-index: 1;
-} */
 
 
 

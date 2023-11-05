@@ -57,14 +57,17 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                   <ul class="sub-menu absolute group-hover:block w-full top-[100%] -left-5 hidden z-10">
-                    <li class="menu-item leading-8"><a class="hover:text-secondary" href="#0">Shirts</a></li>
-                    <li class="menu-item leading-8"><a class="hover:text-secondary" href="#0">Pents</a></li>
-                    <li class="menu-item leading-8"><a class="hover:text-secondary" href="#0">Jeckets</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/mens.html">Mens</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/womens.html">Womens</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/kids.html">Kids</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/jackets.html">Jackets</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/undergarments.html">Undergarments</a></li>
+                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/sweter.html">Sweter</a></li>
                   </ul>
                 </li>
-                <li class=""><a class="hover:text-secondary" href="./pages/gallery.html">Gallery</a></li>
-                <li class=""><a class="hover:text-secondary" href="./pages/career.html">Career</a></li>
-                <li class=""><a class="hover:text-secondary" href="./pages/contact.html">Contact Us</a></li>
+                <li class=""><a class="hover:text-secondary py-5" href="./pages/gallery.html">Gallery</a></li>
+                <li class=""><a class="hover:text-secondary py-5" href="./pages/career.html">Career</a></li>
+                <li class=""><a class="hover:text-secondary py-5" href="./pages/contact.html">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -99,8 +102,9 @@
               <img src="./images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
             </a>
           </div>
+          <div class="border-b border-primary my-5"></div>
           <ul
-            class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 py-4 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
+            class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
             <li class=" hover:text-secondary">
               <a class=" p-3 block active " href="/">
                 Home
@@ -170,9 +174,9 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide fade relative">
-          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+          <div class="xl:h-screen lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
             <img src="https://img1.wsimg.com/isteam/stock/4282/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m"
-              class="w-full h-full brightness-50 bg-cover" alt="Nature">
+              class="w-full h-full bg-cover" alt="Nature">
             <div class="absolute inset-0 bg-black opacity-30"></div>
           </div>
           <div
@@ -188,8 +192,8 @@
           </div>
         </div>
         <div class="swiper-slide fade relative">
-          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
-            <img src="./images/Bitmaddp-scaled-copy-2.webp" class="w-full h-full brightness-50" alt="Nature">
+          <div class="xl:h-screen lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+            <img src="./images/Bitmaddp-scaled-copy-2.webp" class="w-full h-full" alt="Nature">
             <div class="absolute inset-0 bg-black opacity-30"></div>
           </div>
           <div
@@ -205,9 +209,9 @@
           </div>
         </div>
         <div class="swiper-slide fade relative">
-          <div class="xl:h-[800px] lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
+          <div class="xl:h-screen lg:h-[600px] md:h-[500px] h-[300px] w-full relative flex items-center">
             <img src="https://ananta-bd.com/wp-content/uploads/2021/06/anastase-maragos-ZUBNPRZsQvk-unsplash.jpg"
-              class="w-full h-full brightness-50" alt="Nature">
+              class="w-full h-full" alt="Nature">
             <div class="absolute inset-0 bg-black opacity-30"></div>
           </div>
           <div
@@ -225,78 +229,31 @@
       </div>
       <div class="swiper-button-next bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
       <div class="swiper-button-prev bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination md:hidden block"></div>
     </div>
 
     <!-- about us section -->
-    <div>
-      <div class="max-w-7xl mx-auto px-6 md:py-20 py-10">
-        <div class="text-center">
-          <p class="sm:text-base text-sm">All you need to know</p>
-          <h2 class="md:text-h2 text-h3 font-semibold">About Apprel Horizon Group</h2>
-        </div>
-        <div class="grid md:grid-cols-4 grid-cols-2 sm:gap-10 gap-5 mt-10">
-          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2 w-10 h-10 md:w-16 md:h-16 mx-auto text-primary"
-              viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-              <path d="M10 12h4v4h-4z"></path>
-            </svg>
-            <p class="font-medium sm:text-base break-all text-sm mb-2">Since</p>
-            <h2 class="md:text-h2 text-h3 tracking-wider font-semibold">1950</h2>
+    <div  class="">
+      <div class="max-w-7xl mx-auto px-6 sm:py-20 xl:mb-8 py-10 lg:py-0">
+          <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 relative xl:-mt-60 lg:-mt-44 z-10">
+              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/security.png" alt="">
+                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Reliable</p>
+              </div>
+              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/handshake.png" alt="">
+                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Ethical</p>
+              </div>
+              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/eco-light.png" alt="">
+                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Sustainable</p>
+              </div>
           </div>
-          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory-2 w-10 h-10 md:w-16 md:h-16 mx-auto text-primary" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M3 21h18"></path>
-              <path d="M5 21v-12l5 4v-4l5 4h4"></path>
-              <path d="M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582">
-              </path>
-              <path d="M9 17h1"></path>
-              <path d="M14 17h1"></path>
-            </svg>
-            <p class="font-medium sm:text-base break-all text-sm mb-2">Units</p>
-            <h2 class="md:text-h2 text-h3 tracking-wider count-up font-semibold">31</h2>
-          </div>
-          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group w-10 h-10 md:w-16 md:h-16 mx-auto text-primary" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-              <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"></path>
-              <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-              <path d="M17 10h2a2 2 0 0 1 2 2v1"></path>
-              <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
-              <path d="M3 13v-1a2 2 0 0 1 2 -2h2"></path>
-            </svg>
-            <p class="font-medium sm:text-base break-all text-sm mb-2">Employees</p>
-            <h2 class="md:text-h2 text-h3 tracking-wider count-up special-count font-semibold">3550</h2>
-          </div>
-          <div class="border-2 sm:p-5 p-2 text-center border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trophy w-10 h-10 md:w-16 md:h-16 mx-auto text-primary"
-              viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M8 21l8 0"></path>
-              <path d="M12 17l0 4"></path>
-              <path d="M7 4l10 0"></path>
-              <path d="M17 4v8a5 5 0 0 1 -10 0v-8"></path>
-              <path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-            </svg>
-            <p class="font-medium sm:text-base break-all text-sm mb-2">National Achievements</p>
-            <h2 class="md:text-h2 text-h3 tracking-wider count-up font-semibold">25</h2>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="bg-background">
-      <div class="max-w-7xl mx-auto px-6  md:py-20 py-10">
+      <div class="max-w-7xl mx-auto px-6 py-10">
         <div class="grid md:grid-cols-2 md:gap-10 gap-5 items-center">
           <div class="relative overflow-hidden">
             <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://akij.net/img/Founder-image.jpg" alt="Nature" class="w-full">
@@ -318,9 +275,11 @@
             <p class="py-4 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">The legacy of AKIJ
               GROUP is over half a century old and over the years Akij has established itself as the full of confidence
               and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities &
+              GROUP is over half a century old and over the years Akij has established itself as the full of confidence
+              and much revered industrial family of Bangladesh. It consists of 24 big concerns with diverse activities &
               different products. <br class="hidden sm:block">
               Akij Group launched its venture as a small jute trader more than 50 years ago.</p>
-            <a href="">
+            <a href="./pages/about.html">
               <button
                 class="bg-primary hover:bg-secondary text-white px-6 py-2 mt-4 transition duration-700 ease-in-out">Learn
                 More</button>
@@ -332,7 +291,7 @@
 
     <!-- why choose us section -->
     <div>
-      <div class="max-w-7xl mx-auto px-6 md:py-20 py-10">
+      <div class="max-w-7xl mx-auto px-6 py-10">
         <div class="md:w-1/2 mx-auto text-center">
           <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold">Why Choose Us</h1>
           <p class="my-3 text-sm lg:text-base leading-6 tracking-wide">Fashionplus International is a UK based sales
@@ -399,9 +358,54 @@
         </div>
       </div>
     </div>
+
+       <!-- our products -->
+
+   <div class="bg-background">
+    <div class="max-w-7xl mx-auto px-7 py-10">
+      <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center mb-10">Our Products</h1>
+      <div class="grid xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-5">
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+              <a href="#">
+                   <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/shirt.png" alt="shirt"/>
+              </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+         <a href="#">
+          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/t-shirt.png" alt="t-shirt"/>
+         </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+          <a href="#">
+            <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/jeans.png" alt="jeans"/>
+          </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+          <a href="#">
+            <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/puffer-jacket.png" alt="puffer-jacket"/>
+          </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+         <a href="#">
+          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-microdots-premium-microdot-graphic/64/external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic.png" alt="external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic"/>
+         </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+         <a href="#">
+          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-yogi-aprelliyanto-outline-color-yogi-aprelliyanto/32/external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto.png" alt="external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto"/>
+         </a>
+        </div>
+        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/external-shirt-autumn-clothes-justicon-lineal-color-justicon.png" alt="external-shirt-autumn-clothes-justicon-lineal-color-justicon"/>
+            </a>
+        </div>
+      </div>
+    </div>
+   </div>
     
-    <div class="bg-background">
-      <div class="max-w-7xl mx-auto px-6 md:py-20 py-10">
+    <div class="">
+      <div class="max-w-7xl mx-auto px-6 py-10">
         <div class="grid lg:grid-cols-5 gap-5 lg:gap-0 sm:grid-cols-2 sm:items-center">
           <div class="lg:col-span-3 sm:col-span-1 overflow-hidden">
             <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://www.standard-group.com/wp-content/uploads/2021/01/about.jpg" alt="">
@@ -419,7 +423,7 @@
               <p class=" text-sm lg:text-base lg:leading-8 leading-6 tracking-wide p-3">Client success stories</p>
             </div>
           </div>
-          <div class="lg:p-20 md:p-10 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1 p-5 z-10">
+          <div class="lg:p-20 md:p-10 sm:p-7 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1 z-10 sm:shadow-2xl">
             <h1 class="text-lg md:text-h3 lg:text-h2 font-semibold ">International standards and compliances measures
             </h1>
             <p class="lg:mt-10 mt-5 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">New
@@ -432,33 +436,10 @@
       </div>
     </div>
 
-   <!-- our products -->
 
-   <div>
-    <div class="max-w-7xl mx-auto px-7 md:py-20 py-10">
-      <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center mb-10">Our Products</h1>
-      <div class="grid grid-cols-5 gap-5">
-        <div class="border-primary rounded-md">
-          <img class="h-40 w-full rounded-md" src="https://i0.wp.com/textilelearner.net/wp-content/uploads/2014/11/Mens-Long-Sleeve-Shirt.jpg?fit=600%2C427&ssl=1" alt="">
-        </div>
-        <div class="border-primary rounded-md">
-          <img class="h-40 w-full rounded-md" src="https://www.aptexltd.com/content/upload/2021/07/classic-solid-mens-clothing-camisetas-wholesale-graphic-tshirts.webp" alt="">
-        </div>
-        <div class="border-primary rounded-md">
-          <img class="h-40 w-full rounded-md" src="https://bd.all.biz/img/bd/catalog/2093.jpg" alt="">
-        </div>
-        <div class="border-primary rounded-md">
-          <img class="h-40 w-full rounded-md" src="https://www.ramleathercare.com/wp-content/uploads/2019/02/Leather-Jackets-1024x683.jpg" alt="">
-        </div>
-        <div class="border-primary rounded-md">
-          <img class="h-40 w-full rounded-md" src="https://www.bproperty.com/blog/wp-content/uploads/saree-2.jpg" alt="">
-        </div>
-      </div>
-    </div>
-   </div>
 
     <!-- our clients -->
-    <div class="">
+    <div class="bg-background">
       <div class="max-w-7xl mx-auto px-6 py-10">
         <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center">Our Clients</h1>
         <div class="relative glide-08 md:mt-10 mt-5 overflow-hidden">
@@ -747,40 +728,12 @@
         }
       });
     </script>
-<!-- counting script -->
-<script>
-  const countUpElements = document.querySelectorAll('.count-up');
 
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.7, // Adjust this value to control when the counting starts
-  };
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const target = entry.target;
-        const countTo = parseInt(target.textContent, 10);
-        let currentCount = target.classList.contains('special-count') ? 3500 : 0;
-        target.textContent = currentCount;
 
-        const countInterval = setInterval(() => {
-          currentCount += 1;
-          target.textContent = currentCount;
 
-          if (currentCount >= countTo) {
-            clearInterval(countInterval);
-          }
-        }, 40); // Adjust this value for counting speed
-        observer.unobserve(target);
-      }
-    });
-  }, options);
 
-  countUpElements.forEach((element) => {
-    observer.observe(element);
-  });
-</script>
+
+
   </body>
 </html>
