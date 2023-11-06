@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="./images/favicon.webp" />
@@ -21,9 +22,10 @@
       }
 
       .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px
+        width: 10px;
+        height: 10px
       }
+
 
       .swiper-pagination-clickable .swiper-pagination-bullet-active {
         cursor: pointer;
@@ -32,143 +34,193 @@
       }
     </style>
   </head>
+
   <body>
     <div class="capitalize bg-red-500 font-semibold text-white p-2 text-center">this website is under construction</div>
-    <!-- Header -->
-    <nav class="bg-primary/90 text-white backdrop-blur-md shadow-md z-50 sticky top-0">
-      <div class="max-w-7xl mx-auto px-6  py-1 flex  items-center justify-between ">
-        <div class="lg:flex items-center justify-between w-full">
-          <div class="lg:w-[200px] w-[100px]">
-            <a href="/" class="flex items-center">
-              <img src="./images/white.png" class="h-full w-full mr-3" alt="Logo">
+
+
+    <!-- nav-bar start -->
+    <div class="h-full w-full sticky top-0 z-[990]">
+      <nav role="navigation" class="bg-primary/90 text-white backdrop-blur-md shadow-md xl:block hidden top-0">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="flex items-center justify-between">
+            <a href="/" class="w-[180px]">
+              <img src="./images/white.png" alt="logo">
             </a>
-          </div>
-          <div class="hidden w-full lg:flex lg:w-auto" id="navbar-sticky">
-            <nav class="menu">
-              <ul class="flex gap-10 items-center">
-                <li class=""><a class="hover:text-secondary active py-5" href="/">Home</a></li>
-                <li class=""><a class="hover:text-secondary py-5" href="./pages/about.html">About Us</a></li>
-                <li class="menu-item group cursor-pointer flex items-center ">
-                  <a href="#" class="hover:text-secondary text-[15px] py-8">
-                    Products
-                  </a>
-                  <svg class="w-4 h-4 ml-2 transform group-hover:rotate-180 transition-transform"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            <ul class="hidden xl:flex">
+              <li>
+                <a href="/" class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8">Home</a>
+              </li>
+              <li class="relative group">
+                <a href="./pages/about.html"
+                  class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8">About Us</a>
+              </li>
+              <li class="relative group">
+                <div class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8 cursor-pointer ">
+                  <a class="">Products</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="18"
+                    height="18" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M6 9l6 6l6 -6"></path>
                   </svg>
-                  <ul class="sub-menu absolute group-hover:block w-full top-[100%] -left-5 hidden z-10">
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/mens.html">Mens</a></li>
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/womens.html">Womens</a></li>
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/kids.html">Kids</a></li>
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/jackets.html">Jackets</a></li>
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/undergarments.html">Undergarments</a></li>
-                    <li class="menu-item leading-5"><a class="hover:text-secondary" href="./pages/products/sweter.html">Sweter</a></li>
-                  </ul>
-                </li>
-                <li class=""><a class="hover:text-secondary py-5" href="./pages/gallery.html">Gallery</a></li>
-                <li class=""><a class="hover:text-secondary py-5" href="./pages/career.html">Career</a></li>
-                <li class=""><a class="hover:text-secondary py-5" href="./pages/contact.html">Contact Us</a></li>
-              </ul>
-            </nav>
+                </div>
+                <ul
+                  class="absolute bg-primary/90 opacity-0 invisible group-hover:visible group-hover:opacity-100 mt-4 group-hover:mt-0 duration-200 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] whitespace-nowrap min-w-[200px]">
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/mens.html" class="p-4 block font-[400] text-[15px]">Mens</a>
+                  </li>
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/womens.html" class="p-4 block font-[400] text-[15px]">Womens</a>
+                  </li>
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/kids.html" class="p-4 block font-[400] text-[15px]">Kids</a>
+                  </li>
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/jackets.html" class="p-4 block font-[400] text-[15px]">Jackets</a>
+                  </li>
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/undergarments.html" class="p-4 block font-[400] text-[15px]">Undergarments</a>
+                  </li>
+                  <li class="hover:bg-background focus:text-secondary hover:text-secondary ">
+                    <a href="./pages/products/sweter.html" class="p-4 block font-[400] text-[15px]">Sweter</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="./pages/gallery.html"
+                  class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8">Gallery</a>
+              </li>
+              <li>
+                <a href="./pages/career.html"
+                  class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8">Career</a>
+              </li>
+              <li>
+                <a href="./pages/contact.html"
+                  class="focus:text-secondary hover:text-secondary flex px-5 items-center py-8 whitespace-nowrap">Contact
+                  Us</a>
+              </li>
+            </ul>
           </div>
         </div>
+    </div>
+    </nav>
 
-        <div class="text-center">
-          <button
-            class="inline-flex lg:hidden items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg  hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary  "
-            type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
-            aria-controls="drawer-navigation">
-            <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
-        </div>
-
-        <div id="drawer-navigation"
-          class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
-          tabindex="-1" aria-labelledby="drawer-navigation-label">
-          <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-            </svg>
-            <span class="sr-only">Close menu</span>
-          </button>
-          <div class="w-[150px] mx-auto">
-            <a href="/" class="flex items-center">
-              <img src="./images/logo.png" class="h-full w-full mr-3" alt="Flowbite Logo">
-            </a>
-          </div>
-          <div class="border-b border-primary my-5"></div>
-          <ul
-            class="menu flex lg:gap-8 lg:items-center flex-col lg:flex-row md:mt-0 md:p-0 mt-4 font-semibold text-primary rounded-lg  md:border-0 md:bg-white">
-            <li class=" hover:text-secondary">
-              <a class=" p-3 block active " href="/">
-                Home
-              </a>
-            </li>
-            <li class="hover:text-secondary">
-              <a class="p-3 block " href="./pages/about.html">
-                About Us
-              </a>
-            </li>
-            <li>
-              <details class="group">
-                <summary
-                  class="flex items-center justify-between gap-2 p-3 font-medium marker:content-none hover:cursor-pointer">
-            <li class="hover:text-secondary">
-              Products
-            </li>
-            <svg class="w-5 h-5 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16"
-              height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-              </path>
-            </svg>
-            </summary>
-            <article class="px-4 pb-4">
-              <ul class="flex flex-col gap-4 pl-2 mt-4">
-                <li class="hover:text-secondary">
-                  <a href="http://127.0.0.1:8000/user/dashboard">
-                    Shirts
-                  </a>
-                </li>
-                <li class="hover:text-secondary">
-                  <a href="http://127.0.0.1:8000/user/dashboard">
-                    Pents
-                  </a>
-                </li>
-                <li class="hover:text-secondary">
-                  <a href="http://127.0.0.1:8000/user/dashboard">
-                    Jeckets
-                  </a>
-                </li>
-              </ul>
-            </article>
-            </details>
-            </li>
-            <li class="hover:text-secondary">
-              <a class="p-3 block" href="./pages/gallery.html">
-                Gallery
-              </a>
-            </li>
-            <li class="hover:text-secondary">
-              <a class="p-3 block" href="./pages/career.html">
-                Career
-              </a>
-            </li>
-            <li class="hover:text-secondary">
-              <a class="p-3 block" href="./pages/contact.html">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div class="px-5 sm:px-10 py-1 w-full flex xl:hidden shadow justify-between items-center bg-primary/90 z-40">
+        <a href="/" class="w-[140px] sm:w-[180px]">
+          <img src="./images/white.png" alt="logo">
+        </a>
+        <button id="menu" aria-label="open menu" class="focus:outline-none focus:ring-2 focus:ring-gray-600 rounded-md"
+          onclick="sidebarHandler(true)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 w-10 h-10 text-white" 
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </button>
       </div>
     </nav>
+    <!-- Code block ends -->
+    </div>
+
+    <div class="w-full h-full transform -translate-x-full xl:hidden fixed top-0 z-[991]" id="mobile-nav">
+      <div class="bg-gray-800 opacity-50 w-full h-full" onclick="sidebarHandler(false)"></div>
+      <div
+        class="w-[310px] z-40 fixed overflow-y-auto top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
+        <div class="h-full">
+          <div class="flex flex-col justify-between h-full w-full">
+            <div>
+              <div class="flex w-full items-center justify-between border-b px-5 py-2 bg-slate-100">
+                <div class="flex items-center justify-between w-full py-4 sm:py-5">
+                  <a href="/" class="w-[140px]">
+                    <img src="./images/logo.png" alt="logo">
+                  </a>
+                  <button id="cross" aria-label="close menu" class="focus:outline-none focus:ring-2 rounded-md "
+                    onclick="sidebarHandler(false)">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                      height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"></path>
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <ul class="f-m-m">
+                <li class=" py-1 my-1 md:py-1 md:my-2 cursor-pointer hover:bg-primary hover:text-white">
+                  <a href="/" tabindex="0"
+                    class="focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base ml-3">
+                    Home</a>
+                </li>
+                <li class=" py-1 my-1 md:py-1 md:my-2 cursor-pointer hover:bg-primary hover:text-white">
+                  <a href="./pages/about.html" tabindex="0"
+                    class="focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base ml-3">
+                    About Us</a>
+                </li>
+                <li class="">
+                  <div
+                    class="parent_menu focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base px-3 flex items-center justify-between hover:bg-primary hover:text-white py-1 my-1 md:py-1 md:my-2 cursor-pointer">
+                    <span>Products</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6" width="18" height="18"
+                      viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 9l6 6l6 -6"></path>
+                    </svg>
+                  </div>
+                  <div class="child_menu">
+                    <ul class="my-2 text-base md:text-lg">
+                      <li><a href="./pages/products/mens.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Mens</a>
+                      </li>
+                      <li><a href="./pages/products/womens.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Womens</a>
+                      </li>
+                      <li><a href="./pages/products/kids.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Kids
+                          Banks</a></li>
+                      <li><a href="./pages/products/jackets.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Jackets
+                          Strips</a></li>
+                      <li><a href="./pages/products/undergarments.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Undergarments
+                          Stations</a></li>
+                      <li><a href="./pages/products/sweter.html"
+                          class="py-1 px-2 m-1 hover:bg-primary hover:text-white block rounded">Sweter
+                          Stations</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class=" py-1 my-1 md:py-1 md:my-2 cursor-pointer hover:bg-primary hover:text-white">
+                  <a href="./pages/gallery.html" tabindex="0"
+                    class="focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base ml-3">
+                    Gallery</a>
+                </li>
+                <li class=" py-1 my-1 md:py-1 md:my-2 cursor-pointer hover:bg-primary hover:text-white">
+                  <a href="./pages/career.html" tabindex="0"
+                    class="focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base ml-3">Career</a>
+                </li>
+                <li class=" py-1 my-1 md:py-1 md:my-2 cursor-pointer hover:bg-primary hover:text-white">
+                  <a href="./pages/contact.html" tabindex="0"
+                    class="focus:outline-none focus:text-secondary-600  xl:text-base md:text-lg text-base ml-3">
+                    Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav-bar end -->
+
+
+
 
     <!-- slider -->
     <div class="swiper mySwiper">
@@ -229,26 +281,26 @@
       </div>
       <div class="swiper-button-next bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
       <div class="swiper-button-prev bg-[#ffffff99] text-primary p-6 rounded-full slider-button"></div>
-      <div class="swiper-pagination md:hidden block"></div>
+      <div class="swiper-pagination md:hidden block w-4 h-4"></div>
     </div>
 
     <!-- about us section -->
-    <div  class="">
-      <div class="max-w-7xl mx-auto px-6 sm:py-20 xl:mb-8 py-10 lg:py-0">
-          <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 relative xl:-mt-60 lg:-mt-44 z-10">
-              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
-                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/security.png" alt="">
-                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Reliable</p>
-              </div>
-              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
-                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/handshake.png" alt="">
-                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Ethical</p>
-              </div>
-              <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
-                <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/eco-light.png" alt="">
-                <p class="text-center md:text-h2 text-h3 mt-5 text-white">Sustainable</p>
-              </div>
+    <div class="">
+      <div class="max-w-7xl mx-auto px-6  xl:mb-8 py-10 lg:py-0">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5 relative xl:-mt-60 lg:-mt-44 z-10">
+          <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+            <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/security.png" alt="">
+            <p class="text-center md:text-h2 text-h3 mt-5 text-white">Reliable</p>
           </div>
+          <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+            <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/handshake.png" alt="">
+            <p class="text-center md:text-h2 text-h3 mt-5 text-white">Ethical</p>
+          </div>
+          <div class="xl:p-5 p-3 lg:bg-[#00000099] bg-black hover:bg-black transition duration-700 ease-out">
+            <img class="mx-auto xl:w-28 lg:w-20 md:w-16 w-14" src="./images/eco-light.png" alt="">
+            <p class="text-center md:text-h2 text-h3 mt-5 text-white">Sustainable</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -256,19 +308,20 @@
       <div class="max-w-7xl mx-auto px-6 py-10">
         <div class="grid md:grid-cols-2 md:gap-10 gap-5 items-center">
           <div class="relative overflow-hidden">
-            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://akij.net/img/Founder-image.jpg" alt="Nature" class="w-full">
+            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full"
+              src="https://akij.net/img/Founder-image.jpg" alt="Nature" class="w-full">
             <div class="absolute bottom-4 right-4 bg-white rounded-md sm:p-4 p-2">
-                <div class="flex sm:gap-3 gap-2 items-center">
-                  <div>
-                    <img class="sm:w-12 w-8 overflow-hidden" src="./images//logo.png" alt="">
-                  </div>
-                  <div>
-                    <h4 class="sm:text-lg text-md font-semibold text-primary">SK. ATICK RAHMAN</h4>
-                    <p class="text-sm text-secondary">Founder</p>
-                  </div>
+              <div class="flex sm:gap-3 gap-2 items-center">
+                <div>
+                  <img class="sm:w-12 w-8 overflow-hidden" src="./images//logo.png" alt="">
                 </div>
+                <div>
+                  <h4 class="sm:text-lg text-md font-semibold text-primary">SK. ATICK RAHMAN</h4>
+                  <p class="text-sm text-secondary">Founder</p>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
           <div class=" text-center sm:text-left">
             <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold ">One of the biggest conglomerates in Bangladesh.
             </h2>
@@ -351,7 +404,8 @@
             </div>
             <div class="text-center">
               <h2 class="text-lg md:text-h3 lg:text-h2 font-semibold mt-5 mb-2 lg:my-5">Quality Advantage</h2>
-              <p class="text-sm lg:text-base leading-6 tracking-wide px-5">The quality you seek is the quality we great effort to ensure
+              <p class="text-sm lg:text-base leading-6 tracking-wide px-5">The quality you seek is the quality we great
+                effort to ensure
                 deliver.</p>
             </div>
           </div>
@@ -359,56 +413,74 @@
       </div>
     </div>
 
-       <!-- our products -->
+    <!-- our products -->
 
-   <div class="bg-background">
-    <div class="max-w-7xl mx-auto px-7 py-10">
-      <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center mb-10">Our Products</h1>
-      <div class="grid xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-5">
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-              <a href="#">
-                   <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/shirt.png" alt="shirt"/>
-              </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-         <a href="#">
-          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/t-shirt.png" alt="t-shirt"/>
-         </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-          <a href="#">
-            <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/jeans.png" alt="jeans"/>
-          </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-          <a href="#">
-            <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/puffer-jacket.png" alt="puffer-jacket"/>
-          </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-         <a href="#">
-          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-microdots-premium-microdot-graphic/64/external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic.png" alt="external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic"/>
-         </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
-         <a href="#">
-          <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-yogi-aprelliyanto-outline-color-yogi-aprelliyanto/32/external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto.png" alt="external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto"/>
-         </a>
-        </div>
-        <div class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+    <div class="bg-background">
+      <div class="max-w-7xl mx-auto px-7 py-10">
+        <h1 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold text-center mb-10">Our Products</h1>
+        <div class="grid xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-5">
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
             <a href="#">
-              <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/external-shirt-autumn-clothes-justicon-lineal-color-justicon.png" alt="external-shirt-autumn-clothes-justicon-lineal-color-justicon"/>
+              <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/shirt.png"
+                alt="shirt" />
             </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto"
+                src="https://img.icons8.com/color/48/t-shirt.png" alt="t-shirt" />
+            </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto" src="https://img.icons8.com/color/48/jeans.png"
+                alt="jeans" />
+            </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto"
+                src="https://img.icons8.com/color/48/puffer-jacket.png" alt="puffer-jacket" />
+            </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto"
+                src="https://img.icons8.com/external-microdots-premium-microdot-graphic/64/external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic.png"
+                alt="external-apparel-clothes-accessory-vol1-microdots-premium-microdot-graphic" />
+            </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto"
+                src="https://img.icons8.com/external-yogi-aprelliyanto-outline-color-yogi-aprelliyanto/32/external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto.png"
+                alt="external-chinese-dress-chinese-new-year-yogi-aprelliyanto-outline-color-yogi-aprelliyanto" />
+            </a>
+          </div>
+          <div
+            class="border-primary rounded-xl transition duration-700 ease-out hover:shadow-gray-400 hover:shadow-bottom-right hover:scale-110 border p-5">
+            <a href="#">
+              <img class="w-16 h-16 items-center justify-center mx-auto"
+                src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/external-shirt-autumn-clothes-justicon-lineal-color-justicon.png"
+                alt="external-shirt-autumn-clothes-justicon-lineal-color-justicon" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-   </div>
-    
+
     <div class="">
       <div class="max-w-7xl mx-auto px-6 py-10">
         <div class="grid lg:grid-cols-5 gap-5 lg:gap-0 sm:grid-cols-2 sm:items-center">
           <div class="lg:col-span-3 sm:col-span-1 overflow-hidden">
-            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full" src="https://www.standard-group.com/wp-content/uploads/2021/01/about.jpg" alt="">
+            <img class="rounded-md hover:scale-110 transition duration-700 ease-in-out object-cover w-full"
+              src="https://www.standard-group.com/wp-content/uploads/2021/01/about.jpg" alt="">
             <div class="bg-primary text-white text-center lg:w-3/5 xl:2/3 lg:mt-10 mt-5 rounded-md">
               <p class="flex gap-5 text-h1 items-center justify-center p-10">
                 <span>
@@ -423,7 +495,8 @@
               <p class=" text-sm lg:text-base lg:leading-8 leading-6 tracking-wide p-3">Client success stories</p>
             </div>
           </div>
-          <div class="lg:p-20 md:p-10 sm:p-7 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1 z-10 sm:shadow-2xl">
+          <div
+            class="lg:p-20 md:p-10 sm:p-7 lg:col-span-2 lg:-ml-52 bg-white lg:mt-32 rounded-md sm:col-span-1 z-10 sm:shadow-2xl">
             <h1 class="text-lg md:text-h3 lg:text-h2 font-semibold ">International standards and compliances measures
             </h1>
             <p class="lg:mt-10 mt-5 text-sm lg:text-base lg:leading-8 leading-6 tracking-wide text-justify">New
@@ -630,13 +703,14 @@
         </div>
 
         <div class="mt-6">
-            <p class="text-sm text-gray-200 hover:text-white text-center">© Copyright <span id="currentYear"></span>
-              Apparel Horizon. | All Rights Reserved | Powered by <a href="https://www.zealtechbd.com/" target="_blank" class="hover:text-secondary font-semibold">ZealtechBD.</a></p>
+          <p class="text-sm text-gray-200 hover:text-white text-center">© Copyright <span id="currentYear"></span>
+            Apparel Horizon. | All Rights Reserved | Powered by <a href="https://www.zealtechbd.com/" target="_blank"
+              class="hover:text-secondary font-semibold">ZealtechBD.</a></p>
         </div>
       </div>
     </div>
 
-    <script src="./main.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -728,12 +802,7 @@
         }
       });
     </script>
-
-
-
-
-
-
-
+    <script src="./main.js"></script>
   </body>
+
 </html>

@@ -10,103 +10,55 @@ h1,h2,h3,h4,h5,h6,p,span{
   font-family: 'Lato', sans-serif;
 }
 
-/*
- @font-face {
-  font-family: 'Atiba';
-  src: url('./public/font/Atiba.ttf');
-}
-body{
-  font-family: 'Atiba';
-} */
 
-/* navbar */
 
-.active{
-  color: #F9A524;
-  font-weight: 600;
+/* / scroll bar / */
+::-webkit-scrollbar-track {
+    background-color: #deeaee;
 }
 
- .menu-item:hover::before {
-  transform: scale(1);
-  width: 100%;
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+    background-color: #a8a8a8;
 }
-.menu-item {
-  position: relative;
-  text-align: center;
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+    border-radius: 10px;
 }
-.menu-item a {
-  overflow: hidden;
-  white-space: nowrap;
-  display: block;
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
 }
-.sub-menu .menu-item {
-  padding: 0.75rem 0;
-  background: #343964;
-  opacity: 0;
-  width: 200px;
-  transform-origin: bottom;
-  animation: enter 0.2s ease forwards;
-}
-.sub-menu .menu-item:nth-child(1) {
-  animation-duration: 0.2s;
-  animation-delay: 0s;
-}
-.sub-menu .menu-item:nth-child(2) {
-  animation-duration: 0.3s;
-  animation-delay: 0.1s;
-}
-.sub-menu .menu-item:nth-child(3) {
-  animation-duration: 0.4s;
-  animation-delay: 0.2s;
-}
-.sub-menu .menu-item:nth-child(4) {
-  animation-duration: 0.5s;
-  animation-delay: 0.3s;
-}
-.sub-menu .menu-item:nth-child(5) {
-  animation-duration: 0.6s;
-  animation-delay: 0.4s;
-}
-.sub-menu .menu-item:nth-child(6) {
-  animation-duration: 0.7s;
-  animation-delay: 0.5s;
-}
-.sub-menu .menu-item:hover {
-  background: #1E2453;
-}
-.sub-menu .menu-item a {
-  padding: 0 0.75rem;
+
+::-webkit-scrollbar-thumb:active {
+    @apply bg-primary;
 }
 
 
 
-
-
-
-@keyframes enter {
-  from {
-    opacity: 0;
-    transform: scaleY(0.98) translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+/* / menu, sub menu / */
+.child_menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: #fff;
+    margin: 0 20px;
 }
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+
+.show {
+    max-height: 300px;
+    height: auto;
+    transition: 0.7s;
+    overflow-y: auto;
 }
+
 
 
 
 /* 
 /* slider css code */
-
 .swiper {
   width: 100%;
   height: 70%%;
@@ -182,3 +134,4 @@ body{
     opacity: 1;
   }
 }
+
