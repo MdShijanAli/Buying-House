@@ -21,7 +21,6 @@ export default defineConfig({
         sweter: resolve(__dirname, 'pages/products/sweter.html'),
         undergarments: resolve(__dirname, 'pages/products/undergarments.html'),
         womens: resolve(__dirname, 'pages/products/womens.html'),
-        careers: resolve(__dirname, 'pages/careers.html'),
         style: resolve(__dirname, 'style.css'),
         main: resolve(__dirname, 'main.js'),
       },
